@@ -48,6 +48,12 @@ public class LetsTalk : MonoBehaviour
         {
             ShowThem();
         }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (count < dialogue.Length)
+                NextDialogue();
+        }
     }
 
     public void ShowThem()
