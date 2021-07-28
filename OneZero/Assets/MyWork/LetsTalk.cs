@@ -10,11 +10,10 @@ public class LetsTalk : MonoBehaviour
     {
         [TextArea]
         public string dialogue;
+        public string nameO;
+        public string nameZ;
         public Sprite One;
         public Sprite Zero;
-        public string oneTalk;
-        public string zeroTalk;
-
     }
 
     [SerializeField]
@@ -22,25 +21,27 @@ public class LetsTalk : MonoBehaviour
     [SerializeField]
     private SpriteRenderer sprite_Zero;
     [SerializeField]
-    private SpriteRenderer spirte_Dialogue;
-    [SerializeField]
-    private Text text_One;
-    [SerializeField]
-    private Text text_Zero;
+    private SpriteRenderer sprite_dialogue;
     [SerializeField]
     private Text text_Dialogue;
-
-    private bool isDialogue = false;
-    private int count = 0;
-    private float start = 0;
+    [SerializeField]
+    private Text oneTalk;
+    [SerializeField]
+    private Text zeroTalk;
 
     [SerializeField] private Dialogue[] dialogue;
 
-    private void Start()
+    //private bool isDialogue = true;
+    private float start = 0;
+    private int count = 0;
+
+    // Start is called before the first frame update
+    void Start()
     {
-        
+        count = 0;
+        NextDialogue();
     }
-    // Update is called once per frame
+
     void Update()
     {
         start += Time.deltaTime;
@@ -56,23 +57,25 @@ public class LetsTalk : MonoBehaviour
         }
     }
 
-    public void ShowThem()
+    private void ShowThem()
     {
-        spirte_Dialogue.gameObject.SetActive(true);
+        sprite_dialogue.gameObject.SetActive(true);
         sprite_One.gameObject.SetActive(true);
         sprite_Zero.gameObject.SetActive(true);
         text_Dialogue.gameObject.SetActive(true);
+        oneTalk.gameObject.SetActive(true);
+        zeroTalk.gameObject.SetActive(true);
 
         count = 0;
-        isDialogue = true;
-        NextDialogue();
+        //isDialogue = true;
     }
+
 
     private void NextDialogue()
     {
         text_Dialogue.text = dialogue[count].dialogue;
-        text_One.text = dialogue[count].oneTalk;
-        text_Zero.text = dialogue[count].zeroTalk;
+        oneTalk.text = dialogue[count].nameO;
+        zeroTalk.text = dialogue[count].nameZ;
         sprite_One.sprite = dialogue[count].One;
         sprite_Zero.sprite = dialogue[count].Zero;
         count++;
