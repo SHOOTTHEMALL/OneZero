@@ -34,6 +34,7 @@ public class LetsTalk : MonoBehaviour
     //private bool isDialogue = true;
     private float start = 0;
     private int count = 0;
+    private bool isDialogue = false;
 
     // Start is called before the first frame update
     void Start()
@@ -50,10 +51,13 @@ public class LetsTalk : MonoBehaviour
             ShowThem();
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if(isDialogue)
         {
-            if (count < dialogue.Length)
-                NextDialogue();
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                if (count < dialogue.Length)
+                    NextDialogue();
+            }
         }
     }
 
@@ -66,8 +70,8 @@ public class LetsTalk : MonoBehaviour
         oneTalk.gameObject.SetActive(true);
         zeroTalk.gameObject.SetActive(true);
 
-        count = 0;
-        //isDialogue = true;
+        //count = 0; 이 씨발련ㅋㅋㅋㅋㅋㅋ드디어 ㅈ ㅏㅂ았다
+        isDialogue = true;
     }
 
 
