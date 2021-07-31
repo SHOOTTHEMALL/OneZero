@@ -245,7 +245,7 @@ MonoBehaviour:
   oneTalk: {fileID: 2106114622}
   zeroTalk: {fileID: 1235316663}
   dialogue:
-  - dialogue: "\uC624 \uC548\uB155"
+  - dialogue: "\uC548\uB155 \uB4DC\uB514\uC5B4 \uC624\u3158\u3146\uB178!"
     nameO: 
     nameZ: 
     One: {fileID: 21300000, guid: be4b11b66ee8bf543b96e6b1b621ba9d, type: 3}
