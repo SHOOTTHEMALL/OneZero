@@ -250,12 +250,22 @@ MonoBehaviour:
     nameZ: 
     One: {fileID: 21300000, guid: be4b11b66ee8bf543b96e6b1b621ba9d, type: 3}
     Zero: {fileID: 21300000, guid: 464e7221426757a438649d1ceb718d61, type: 3}
-  - dialogue: "\uB108\uC5D0\uAC8C \uC0AC\uB791\uC774 \uBE60\uC84C\uC9C0"
+  - dialogue: "\uB108\uC5D0\uAC8C \uC0AC\uB791\uC774 "
     nameO: 
     nameZ: 
     One: {fileID: 21300000, guid: be4b11b66ee8bf543b96e6b1b621ba9d, type: 3}
     Zero: {fileID: 21300000, guid: 464e7221426757a438649d1ceb718d61, type: 3}
   - dialogue: "\uADF8\uB9AC\uACE0 \uB10C \uC8FD\uC744\uAC70\uC57C\n"
+    nameO: "\u3141\u3134\u3147\u313B\u3147\u3139"
+    nameZ: "\u3141\u3134\u3147\u313B\u3147\u3134\u3139"
+    One: {fileID: 0}
+    Zero: {fileID: 0}
+  - dialogue: zzzz
+    nameO: "\u3141\u3134\u3147\u313B\u3147\u3139"
+    nameZ: "\u3141\u3134\u3147\u313B\u3147\u3134\u3139"
+    One: {fileID: 0}
+    Zero: {fileID: 0}
+  - dialogue: "\uD558\uC9C0\uB9CC \uAD1C\uCC2E\uB2E4 \uB09C \uC9F1\uC384\uB2E4 \uD788\uD718\uD718"
     nameO: "\u3141\u3134\u3147\u313B\u3147\u3139"
     nameZ: "\u3141\u3134\u3147\u313B\u3147\u3134\u3139"
     One: {fileID: 0}
@@ -903,6 +913,7 @@ GameObject:
   - component: {fileID: 1688707471}
   - component: {fileID: 1688707473}
   - component: {fileID: 1688707472}
+  - component: {fileID: 1688707474}
   m_Layer: 5
   m_Name: TalkSiabl
   m_TagString: Untagged
@@ -970,6 +981,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1688707470}
   m_CullTransparentMesh: 0
+--- !u!114 &1688707474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688707470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2311db4db65121d4b832e6d5e7645856, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charS: 15
+  isAni: 0
 --- !u!1 &1765881558
 GameObject:
   m_ObjectHideFlags: 0
