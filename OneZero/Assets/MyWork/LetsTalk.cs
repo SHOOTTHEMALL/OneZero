@@ -83,6 +83,7 @@ public class LetsTalk : MonoBehaviour
         zeroTalk.text = dialogue[count].nameZ;
         sprite_One.sprite = dialogue[count].One;
         sprite_Zero.sprite = dialogue[count].Zero;
+        text_Dialogue.DOText(text_Dialogue.text, 8);
         count++;
     }
 }
