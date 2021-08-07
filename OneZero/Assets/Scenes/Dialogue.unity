@@ -258,8 +258,8 @@ MonoBehaviour:
   - dialogue: "\uBCF4\uD1B5 \uC790\uAE30 \uC18C\uAC1C\uBD80\uD130 \uD558\uC9C0 \uC54A\uB098?"
     nameO: 
     nameZ: ??
-    One: {fileID: 0}
-    Zero: {fileID: 0}
+    One: {fileID: 21300000, guid: be4b11b66ee8bf543b96e6b1b621ba9d, type: 3}
+    Zero: {fileID: 21300000, guid: 464e7221426757a438649d1ceb718d61, type: 3}
   - dialogue: "\uC544 \uB9DE\uB2F9 "
     nameO: ???
     nameZ: 
@@ -268,8 +268,33 @@ MonoBehaviour:
   - dialogue: "\uB098\uB2A5~~~ \uB9CC\uBC31\uC77C\uC774\uB77C\uACE0\uD574~~~~"
     nameO: "\uB9CC\uBC31\uC77C"
     nameZ: 
-    One: {fileID: 0}
-    Zero: {fileID: 0}
+    One: {fileID: 21300000, guid: be4b11b66ee8bf543b96e6b1b621ba9d, type: 3}
+    Zero: {fileID: 21300000, guid: 464e7221426757a438649d1ceb718d61, type: 3}
+  - dialogue: "\uBA48\uCDB0!"
+    nameO: 
+    nameZ: ??
+    One: {fileID: 21300000, guid: be4b11b66ee8bf543b96e6b1b621ba9d, type: 3}
+    Zero: {fileID: 21300000, guid: 464e7221426757a438649d1ceb718d61, type: 3}
+  - dialogue: "\uB09C \uACF5\uACF5\uC774\uC57C \uC678\uC790 \uC774\uB984."
+    nameO: 
+    nameZ: "\uACF5\uACF5"
+    One: {fileID: 21300000, guid: be4b11b66ee8bf543b96e6b1b621ba9d, type: 3}
+    Zero: {fileID: 21300000, guid: 464e7221426757a438649d1ceb718d61, type: 3}
+  - dialogue: "\uACF5\uC774\uB77C\uACE0 \uBD88\uB7EC "
+    nameO: 
+    nameZ: "\uACF5\uACF5"
+    One: {fileID: 21300000, guid: be4b11b66ee8bf543b96e6b1b621ba9d, type: 3}
+    Zero: {fileID: 21300000, guid: 464e7221426757a438649d1ceb718d61, type: 3}
+  - dialogue: "\uC5B4..."
+    nameO: 
+    nameZ: "\uACF5\uACF5 "
+    One: {fileID: 21300000, guid: be4b11b66ee8bf543b96e6b1b621ba9d, type: 3}
+    Zero: {fileID: 21300000, guid: 464e7221426757a438649d1ceb718d61, type: 3}
+  - dialogue: "\uC74C..."
+    nameO: 
+    nameZ: "\uACF5\uACF5 "
+    One: {fileID: 21300000, guid: be4b11b66ee8bf543b96e6b1b621ba9d, type: 3}
+    Zero: {fileID: 21300000, guid: 464e7221426757a438649d1ceb718d61, type: 3}
 --- !u!1 &39822641
 GameObject:
   m_ObjectHideFlags: 0
