@@ -20,5 +20,9 @@ public class Move : MonoBehaviour
         {
             transform.DOMoveY(-3.3f, 2);
         }
+        else if (gameObject.CompareTag("Oh"))
+        {
+            transform.DOMoveY(-2.5f, 2);
+        }
     }
 }
