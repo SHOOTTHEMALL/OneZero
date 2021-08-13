@@ -34,18 +34,18 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-    private IEnumerator SpawnNoteOne()
-    {
-        while(true)
-        {
-            float randomX = Random.Range(-10, 10);
-            Instantiate(note, new Vector2(randomX, 2), Quaternion.identity);
-            yield return new WaitForSeconds(0.2f);
-            float delay = 2;
-            yield return new WaitForSeconds(delay);
-        }
+    //private IEnumerator SpawnNoteOne()
+    //{
+    //    while(true)
+    //    {
+    //        float randomX = Random.Range(-10, 10);
+    //        Instantiate(note, new Vector2(randomX, 2), Quaternion.identity);
+    //        yield return new WaitForSeconds(0.2f);
+    //        float delay = 2;
+    //        yield return new WaitForSeconds(delay);
+    //    }
         
-    }
+    //}
 
     IEnumerator CreateMob()
     {
