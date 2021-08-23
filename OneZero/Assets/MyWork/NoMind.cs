@@ -40,7 +40,7 @@ public class NoMind : Slot, IBeginDragHandler, IEndDragHandler, IDragHandler
         canFuck.alpha = 1f;
         //if (eventData.pointerDrag != null)
         //{
-        //    transform.position = mousePos; 핸드폰에서 해야한다. 
+        //    transform.position = mousePos; 핸드폰에서 해야한다. 마우스클릭으로 한다. 
         //}
     }
 }
