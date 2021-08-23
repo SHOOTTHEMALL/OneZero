@@ -245,104 +245,14 @@ MonoBehaviour:
   oneTalk: {fileID: 2106114622}
   zeroTalk: {fileID: 1235316663}
   dialogue:
-  - dialogue: "\uBC18\uAC11\uB2E4 \uBC18\uAC00\uC6CC"
+  - dialogue: "\uC878\uB9AC\uB2E4"
     nameO: ???
     nameZ: 
     One: {fileID: 21300000, guid: be4b11b66ee8bf543b96e6b1b621ba9d, type: 3}
     Zero: {fileID: 21300000, guid: 464e7221426757a438649d1ceb718d61, type: 3}
-  - dialogue: "\uB098 \uC9C4\uC9DC \uC624\uB7AB\uB3D9\uC548 \uAE30\uB2E4\uB838\uC5B4!!!!"
+  - dialogue: "\uBA39\uC744\uAE4C\uB9D0\uAE4C\uBA39\uC744\uAE4C\uB9D0\uAE4C"
     nameO: ???
     nameZ: 
-    One: {fileID: 21300000, guid: be4b11b66ee8bf543b96e6b1b621ba9d, type: 3}
-    Zero: {fileID: 21300000, guid: 464e7221426757a438649d1ceb718d61, type: 3}
-  - dialogue: "\uBCF4\uD1B5 \uC790\uAE30 \uC18C\uAC1C\uBD80\uD130 \uD558\uC9C0 \uC54A\uB098?"
-    nameO: 
-    nameZ: ??
-    One: {fileID: 21300000, guid: be4b11b66ee8bf543b96e6b1b621ba9d, type: 3}
-    Zero: {fileID: 21300000, guid: 464e7221426757a438649d1ceb718d61, type: 3}
-  - dialogue: "\uC544 \uB9DE\uB2F9 "
-    nameO: ???
-    nameZ: 
-    One: {fileID: 21300000, guid: be4b11b66ee8bf543b96e6b1b621ba9d, type: 3}
-    Zero: {fileID: 21300000, guid: 464e7221426757a438649d1ceb718d61, type: 3}
-  - dialogue: "\uB098\uB2A5~~~ \uB9CC\uBC31\uC77C\uC774\uB77C\uACE0\uD574~~~~"
-    nameO: "\uB9CC\uBC31\uC77C"
-    nameZ: 
-    One: {fileID: 21300000, guid: be4b11b66ee8bf543b96e6b1b621ba9d, type: 3}
-    Zero: {fileID: 21300000, guid: 464e7221426757a438649d1ceb718d61, type: 3}
-  - dialogue: "\uBA48\uCDB0!"
-    nameO: 
-    nameZ: ??
-    One: {fileID: 21300000, guid: be4b11b66ee8bf543b96e6b1b621ba9d, type: 3}
-    Zero: {fileID: 21300000, guid: 464e7221426757a438649d1ceb718d61, type: 3}
-  - dialogue: "\uB09C \uACF5\uACF5\uC774\uC57C \uC678\uC790 \uC774\uB984."
-    nameO: 
-    nameZ: "\uACF5\uACF5"
-    One: {fileID: 21300000, guid: be4b11b66ee8bf543b96e6b1b621ba9d, type: 3}
-    Zero: {fileID: 21300000, guid: 464e7221426757a438649d1ceb718d61, type: 3}
-  - dialogue: "\uACF5\uC774\uB77C\uACE0 \uBD88\uB7EC "
-    nameO: 
-    nameZ: "\uACF5\uACF5"
-    One: {fileID: 21300000, guid: be4b11b66ee8bf543b96e6b1b621ba9d, type: 3}
-    Zero: {fileID: 21300000, guid: 464e7221426757a438649d1ceb718d61, type: 3}
-  - dialogue: "\uC5B4..."
-    nameO: 
-    nameZ: "\uACF5\uACF5 "
-    One: {fileID: 21300000, guid: be4b11b66ee8bf543b96e6b1b621ba9d, type: 3}
-    Zero: {fileID: 21300000, guid: 464e7221426757a438649d1ceb718d61, type: 3}
-  - dialogue: "\uC74C..."
-    nameO: 
-    nameZ: "\uACF5\uACF5 "
-    One: {fileID: 21300000, guid: be4b11b66ee8bf543b96e6b1b621ba9d, type: 3}
-    Zero: {fileID: 21300000, guid: 464e7221426757a438649d1ceb718d61, type: 3}
-  - dialogue: "\uB2C8\uAC00 \uB9D0\uD574;"
-    nameO: 
-    nameZ: "\uACF5\uACF5 "
-    One: {fileID: 21300000, guid: be4b11b66ee8bf543b96e6b1b621ba9d, type: 3}
-    Zero: {fileID: 21300000, guid: 464e7221426757a438649d1ceb718d61, type: 3}
-  - dialogue: "\uADF8\uB7F4\uC904 \uC54C\uC558\uC9C0 "
-    nameO: "\uB9CC\uBC31\uC77C"
-    nameZ: 
-    One: {fileID: 21300000, guid: be4b11b66ee8bf543b96e6b1b621ba9d, type: 3}
-    Zero: {fileID: 21300000, guid: 464e7221426757a438649d1ceb718d61, type: 3}
-  - dialogue: ;;;
-    nameO: 
-    nameZ: "\uACF5\uACF5 "
-    One: {fileID: 21300000, guid: be4b11b66ee8bf543b96e6b1b621ba9d, type: 3}
-    Zero: {fileID: 21300000, guid: 464e7221426757a438649d1ceb718d61, type: 3}
-  - dialogue: ' '
-    nameO: 
-    nameZ: "\uACF5\uACF5 "
-    One: {fileID: 21300000, guid: be4b11b66ee8bf543b96e6b1b621ba9d, type: 3}
-    Zero: {fileID: 21300000, guid: 464e7221426757a438649d1ceb718d61, type: 3}
-  - dialogue: "\uC74C..."
-    nameO: 
-    nameZ: "\uACF5\uACF5 "
-    One: {fileID: 21300000, guid: be4b11b66ee8bf543b96e6b1b621ba9d, type: 3}
-    Zero: {fileID: 21300000, guid: 464e7221426757a438649d1ceb718d61, type: 3}
-  - dialogue: "\uC74C..."
-    nameO: 
-    nameZ: "\uACF5\uACF5 "
-    One: {fileID: 21300000, guid: be4b11b66ee8bf543b96e6b1b621ba9d, type: 3}
-    Zero: {fileID: 21300000, guid: 464e7221426757a438649d1ceb718d61, type: 3}
-  - dialogue: "\uC74C..."
-    nameO: 
-    nameZ: "\uACF5\uACF5 "
-    One: {fileID: 21300000, guid: be4b11b66ee8bf543b96e6b1b621ba9d, type: 3}
-    Zero: {fileID: 21300000, guid: 464e7221426757a438649d1ceb718d61, type: 3}
-  - dialogue: "\uC74C..."
-    nameO: 
-    nameZ: "\uACF5\uACF5 "
-    One: {fileID: 21300000, guid: be4b11b66ee8bf543b96e6b1b621ba9d, type: 3}
-    Zero: {fileID: 21300000, guid: 464e7221426757a438649d1ceb718d61, type: 3}
-  - dialogue: "\uC74C..."
-    nameO: 
-    nameZ: "\uACF5\uACF5 "
-    One: {fileID: 21300000, guid: be4b11b66ee8bf543b96e6b1b621ba9d, type: 3}
-    Zero: {fileID: 21300000, guid: 464e7221426757a438649d1ceb718d61, type: 3}
-  - dialogue: "\uC74C..."
-    nameO: 
-    nameZ: "\uACF5\uACF5 "
     One: {fileID: 21300000, guid: be4b11b66ee8bf543b96e6b1b621ba9d, type: 3}
     Zero: {fileID: 21300000, guid: 464e7221426757a438649d1ceb718d61, type: 3}
 --- !u!1 &39822641
@@ -415,7 +325,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 464e7221426757a438649d1ceb718d61, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -914,7 +824,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: be4b11b66ee8bf543b96e6b1b621ba9d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

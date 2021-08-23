@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class LetsTalk : MonoBehaviour
 {
@@ -56,6 +57,8 @@ public class LetsTalk : MonoBehaviour
             {
                 if (count < dialogue.Length)
                     NextDialogue();
+                else
+                    SceneManager.LoadScene("Pool");
             }
         }
     }
