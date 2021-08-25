@@ -3,16 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Slot : MonoBehaviour , IDropHandler 
+public class Slot : MonoBehaviour , IDropHandler
 {
+    public static bool Naruto = false;
     public void OnDrop(PointerEventData eventData)
     {
         //throw new System.NotImplementedException();
         if (eventData.pointerDrag != null)
         {
             //eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition; //현재 위치를 먹어버림.
-            
-            Debug.Log("왜안되노 이거");
+            Naruto = true;
+            eventData.pointerDrag.gameObject.transform.position = gameObject.transform.position;
+            Debug.Log(eventData.pointerDrag.gameObject);
         }
+        else
+            Naruto = false;
+        Debug.Log("쮸왑쮸왑");
     }
 }
