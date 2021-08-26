@@ -11,15 +11,10 @@ public class saveManager : MonoBehaviour
 
     public Text haeunLove;
 
-    private string yName;
+    private string ori;
     string getFilePath(string fileName)
     {
         return Application.persistentDataPath + "/" + fileName;
-    }
-
-    private void Awake()
-    {
-        
     }
 
     // Update is called once per frame
@@ -27,16 +22,15 @@ public class saveManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            yName = haeunLove.text;
+            ori = haeunLove.text;
             print("Save to : " + getFilePath(saveFileName));
 
             StreamWriter sw = new StreamWriter(getFilePath(saveFileName));
-            Debug.Log(yName);
-            sw.WriteLine(yName);
+            Debug.Log(ori);
+            sw.WriteLine(ori);
             //절대 중요
             sw.Close();
 
-            
         }
 
         if (Input.GetKeyDown(KeyCode.L))
