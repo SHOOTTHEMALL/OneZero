@@ -13,7 +13,6 @@ public class Slot : MonoBehaviour , IDropHandler
         {
             if(gameObject.CompareTag("iP"))
             {
-                Debug.Log("f");
                 eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition; //현재 위치를 먹어버림.
                 Naruto = true;
                 //eventData.pointerDrag.gameObject.transform.position = gameObject.transform.position;

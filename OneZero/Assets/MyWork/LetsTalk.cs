@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using DG.Tweening;
 
 public class LetsTalk : MonoBehaviour
 {
@@ -74,6 +75,8 @@ public class LetsTalk : MonoBehaviour
 
         //count = 0; 이 씨발련ㅋㅋㅋㅋㅋㅋ드디어 ㅈ ㅏㅂ았다
         isDialogue = true;
+
+        
     }
 
 
