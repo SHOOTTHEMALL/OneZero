@@ -42,7 +42,6 @@ public class LetsTalk : MonoBehaviour
     void Start()
     {
         count = 0;
-        text_Dialogue.GetComponent<Text>();
     }
 
     void Update()
@@ -76,8 +75,6 @@ public class LetsTalk : MonoBehaviour
 
         //count = 0; 이 씨발련ㅋㅋㅋㅋㅋㅋ드디어 ㅈ ㅏㅂ았다
         isDialogue = true;
-
-        text_Dialogue.DOText(text_Dialogue.text, 10);
     }
 
 
@@ -88,8 +85,6 @@ public class LetsTalk : MonoBehaviour
         zeroTalk.text = dialogue[count].nameZ;
         sprite_One.sprite = dialogue[count].One;
         sprite_Zero.sprite = dialogue[count].Zero;
-        //text_Dialogue.DOText(dialogue[count].dialogue, 3);
         count++;
-        //Debug.Log(count);
     }
 }
