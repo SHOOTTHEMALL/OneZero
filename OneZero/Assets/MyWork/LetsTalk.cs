@@ -37,7 +37,16 @@ public class LetsTalk : MonoBehaviour
     private float start = 0;
     private int count = 0;
     private bool isDialogue = false;
+    private float interval;
+    private string targetMsg;
+    private int index;
+    public bool isAni;
+    public int charS;
 
+    private void Awake()
+    {
+        text_Dialogue = GetComponent<Text>();
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +59,7 @@ public class LetsTalk : MonoBehaviour
         if(start>5)
         {
             ShowThem();
+            GameObject obj = GameObject.Find("TalkSiabl");
         }
 
         if(isDialogue)
@@ -77,7 +87,6 @@ public class LetsTalk : MonoBehaviour
         isDialogue = true;
     }
 
-
     private void NextDialogue()
     {
         text_Dialogue.text = dialogue[count].dialogue;
@@ -86,5 +95,50 @@ public class LetsTalk : MonoBehaviour
         sprite_One.sprite = dialogue[count].One;
         sprite_Zero.sprite = dialogue[count].Zero;
         count++;
+    }
+
+    public void setMsg(string msg)
+    {
+        if (isAni)
+        {
+            CancelInvoke();
+            text_Dialogue.text = targetMsg;
+            EffectEnd();
+        }
+        else
+        {
+            targetMsg = msg;
+            EffectStart();
+        }
+    }
+
+    void EffectStart()
+    {
+        text_Dialogue.text = "";
+        index = 0;
+
+        interval = 1.0f / charS;
+        Debug.Log(interval);
+        isAni = true;
+        Invoke("EffectIng", interval);
+    }
+
+    void EffectIng()
+    {
+        if (text_Dialogue.text == targetMsg)
+        {
+            EffectEnd();
+            return;
+        }
+
+        text_Dialogue.text += targetMsg[index];
+        index++;
+
+        Invoke("EffectIng", interval);
+    }
+
+    void EffectEnd()
+    {
+        isAni = false;
     }
 }
