@@ -37,16 +37,6 @@ public class LetsTalk : MonoBehaviour
     private float start = 0;
     private int count = 0;
     private bool isDialogue = false;
-    private float interval;
-    private string targetMsg;
-    private int index;
-    public bool isAni;
-    public int charS;
-
-    private void Awake()
-    {
-
-    }
     // Start is called before the first frame update
     void Start()
     {
@@ -89,8 +79,8 @@ public class LetsTalk : MonoBehaviour
 
     private void NextDialogue()
     {
-        text_Dialogue.text = "";
-        text_Dialogue.DOText(dialogue[count].dialogue, 0.5f);
+        text_Dialogue.text = " ";
+        text_Dialogue.DOText(dialogue[count].dialogue, 2);
         oneTalk.text = dialogue[count].nameO;
         zeroTalk.text = dialogue[count].nameZ;
         sprite_One.sprite = dialogue[count].One;
