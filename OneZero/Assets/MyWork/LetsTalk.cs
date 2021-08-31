@@ -45,7 +45,7 @@ public class LetsTalk : MonoBehaviour
 
     private void Awake()
     {
-        text_Dialogue = GetComponent<Text>();
+
     }
     // Start is called before the first frame update
     void Start()
@@ -89,7 +89,8 @@ public class LetsTalk : MonoBehaviour
 
     private void NextDialogue()
     {
-        text_Dialogue.text = dialogue[count].dialogue;
+        text_Dialogue.text = "";
+        text_Dialogue.DOText(dialogue[count].dialogue, 0.5f);
         oneTalk.text = dialogue[count].nameO;
         zeroTalk.text = dialogue[count].nameZ;
         sprite_One.sprite = dialogue[count].One;
@@ -97,48 +98,4 @@ public class LetsTalk : MonoBehaviour
         count++;
     }
 
-    public void setMsg(string msg)
-    {
-        if (isAni)
-        {
-            CancelInvoke();
-            text_Dialogue.text = targetMsg;
-            EffectEnd();
-        }
-        else
-        {
-            targetMsg = msg;
-            EffectStart();
-        }
-    }
-
-    void EffectStart()
-    {
-        text_Dialogue.text = "";
-        index = 0;
-
-        interval = 1.0f / charS;
-        Debug.Log(interval);
-        isAni = true;
-        Invoke("EffectIng", interval);
-    }
-
-    void EffectIng()
-    {
-        if (text_Dialogue.text == targetMsg)
-        {
-            EffectEnd();
-            return;
-        }
-
-        text_Dialogue.text += targetMsg[index];
-        index++;
-
-        Invoke("EffectIng", interval);
-    }
-
-    void EffectEnd()
-    {
-        isAni = false;
-    }
 }
