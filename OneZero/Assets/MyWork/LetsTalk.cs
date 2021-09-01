@@ -79,7 +79,7 @@ public class LetsTalk : MonoBehaviour
 
     private void NextDialogue()
     {
-        text_Dialogue.text = " ";
+        text_Dialogue.text = "";
         text_Dialogue.DOText(dialogue[count].dialogue, 2);
         oneTalk.text = dialogue[count].nameO;
         zeroTalk.text = dialogue[count].nameZ;
