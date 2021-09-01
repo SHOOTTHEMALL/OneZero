@@ -298,8 +298,6 @@ MonoBehaviour:
     nameZ: ??
     One: {fileID: 21300000, guid: be4b11b66ee8bf543b96e6b1b621ba9d, type: 3}
     Zero: {fileID: 21300000, guid: 464e7221426757a438649d1ceb718d61, type: 3}
-  isAni: 0
-  charS: 0
 --- !u!1 &39822641
 GameObject:
   m_ObjectHideFlags: 0
