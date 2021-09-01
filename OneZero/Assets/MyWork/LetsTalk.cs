@@ -49,7 +49,6 @@ public class LetsTalk : MonoBehaviour
         if(start>5)
         {
             ShowThem();
-            GameObject obj = GameObject.Find("TalkSiabl");
         }
 
         if(isDialogue)
