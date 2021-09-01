@@ -4,55 +4,53 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject note = null;
+    public sayManager sayManager;
+    public Animator sayPanel;
+    public typeEffect say;
+    public GameObject sObj;
+    public bool show;
+    public int sayIndex;
 
-    public List<GameObject> MobPool = new List<GameObject>();
-    public GameObject[] Mobs;
-    public int objCnt = 1;
-
-    GameObject CreateObj(GameObject obj, Transform parent)
+    public void Action(GameObject scanObj)
     {
-        GameObject copy = Instantiate(obj);
-        copy.transform.SetParent(parent);
-        copy.SetActive(false);
-        return copy;
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        //StartCoroutine(SpawnNoteOne());
-        StartCoroutine(CreateMob());
+        sObj = scanObj;
+        ObjData objData = sObj.GetComponent<ObjData>();
+        Say(objData.id, objData.npc);
+        sayPanel.SetBool("isShow", show);
     }
 
-    void Awake()
+    void Say(int id, bool npc)
     {
-        for (int i = 0; i < Mobs.Length; i++)
+        string sayData = "";
+        if (say.isAni)
         {
-            for (int q = 0; q < objCnt; q++)
-            {
-                MobPool.Add(CreateObj(Mobs[i], transform));
-            }
+            say.setMsg("");
+            return;
         }
-    }
-    //private IEnumerator SpawnNoteOne()
-    //{
-    //    while(true)
-    //    {
-    //        float randomX = Random.Range(-10, 10);
-    //        Instantiate(note, new Vector2(randomX, 2), Quaternion.identity);
-    //        yield return new WaitForSeconds(0.2f);
-    //        float delay = 2;
-    //        yield return new WaitForSeconds(delay);
-    //    }
-        
-    //}
-
-    IEnumerator CreateMob()
-    {
-        while (true)
+        else
         {
-            MobPool[Random.Range(0, MobPool.Count)].SetActive(true);
-            yield return new WaitForSeconds(Random.Range(1.3f, 4f));
+            sayData = sayManager.GetSay(id, sayIndex);
         }
+
+
+
+        if (sayData == null)
+        {
+            show = false;
+            sayIndex = 0;
+            return;
+        }
+
+        if (npc)
+        {
+            say.setMsg(sayData.Split(':')[0]);
+        }
+        else
+        {
+            say.setMsg(sayData);
+        }
+
+        show = true;
+        sayIndex++;
     }
 }
