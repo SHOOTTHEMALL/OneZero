@@ -11,9 +11,10 @@ public class Slot : MonoBehaviour , IDropHandler
         //throw new System.NotImplementedException();
         if (eventData.pointerDrag != null && gameObject.CompareTag("iP"))
         {
-                eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition; //현재 위치를 먹어버림.
-                Naruto = true;
-                //eventData.pointerDrag.gameObject.transform.position = gameObject.transform.position;
+            eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;//현재 위치를 먹어버림.
+            Naruto = true;
+            Debug.Log("들어갔다.");
+            //eventData.pointerDrag.gameObject.transform.position = gameObject.transform.position;
         }
         else
             Naruto = false;
