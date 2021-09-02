@@ -15,8 +15,8 @@ public class sayManager : MonoBehaviour
     // Update is called once per frame
     void GeData()
     {
-        sayData.Add(1, new string[] { "죄책감 때문에 예민해 지지 말자." });
-        sayData.Add(10, new string[] { "알아? 알아 몰라 아냐고" });
+        sayData.Add(1, new string[] { "죄책감 때문에 예민해 지지 말자." ,"와 너무 멋져요 팬이에요 꺆꺆"});
+        sayData.Add(10, new string[] { "알아? 알아 몰라 아냐고","배고프다","내일 아침은 명재뭄ㄴ고기 냠냠" });
     }
 
     public string GetSay(int id, int sayIndex)

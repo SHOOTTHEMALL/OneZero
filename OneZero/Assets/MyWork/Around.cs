@@ -56,7 +56,7 @@ public class Around : MonoBehaviour
         rg.velocity = move * Speed;
 
         //sibal Ray
-        Debug.DrawRay(rg.position, dirVec * 3, new Color(0, 0, 1));
+        Debug.DrawRay(rg.position, dirVec * 3, new Color(1, 0, 1));
         RaycastHit2D Hit = Physics2D.Raycast(rg.position, dirVec, 4, LayerMask.GetMask("Objection"));
 
         if (Hit.collider != null)
