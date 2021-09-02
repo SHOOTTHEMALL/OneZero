@@ -21,7 +21,7 @@ public class NoMind : Slot, IBeginDragHandler, IEndDragHandler, IDragHandler
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        //throw new System.NotImplementedException(); 이게 뭐지?
+        //throw new System.NotImplementedException(); 이게 뭐지? 일부로 오류를 내는 거래 도라인가봐;;
         defaultposition = transform.position;
         canFuck.blocksRaycasts = false;
         canFuck.alpha = .6f;
@@ -35,7 +35,6 @@ public class NoMind : Slot, IBeginDragHandler, IEndDragHandler, IDragHandler
     {
         //throw new System.NotImplementedException();
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
 
         canFuck.blocksRaycasts = true;
         canFuck.alpha = 1f;

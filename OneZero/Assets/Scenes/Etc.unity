@@ -458,9 +458,10 @@ GameObject:
   - component: {fileID: 448852292}
   - component: {fileID: 448852291}
   - component: {fileID: 448852293}
+  - component: {fileID: 448852294}
   m_Layer: 0
   m_Name: kokoroo
-  m_TagString: Untagged
+  m_TagString: iP
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -539,6 +540,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f2bf84592ae3ff4b834f627e28f9363, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &448852294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448852290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89828a16497798499b379b83c6e06ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &519420028
