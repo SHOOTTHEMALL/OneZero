@@ -25,7 +25,7 @@ public class Around : MonoBehaviour
     private void Update()
     {
         h = manager.show ? 0 : Input.GetAxisRaw("Horizontal");
-        v = manager.show ? 0 : Input.GetAxisRaw("Vertical");
+        //v = manager.show ? 0 : Input.GetAxisRaw("Vertical"); 횡스크롤로 
 
         bool hDown = manager.show ? false : Input.GetButtonDown("Horizontal");
         bool vDown = manager.show ? false : Input.GetButtonDown("Vertical");
