@@ -72,7 +72,7 @@ public class LetsTalk : MonoBehaviour
         oneTalk.gameObject.SetActive(true);
         zeroTalk.gameObject.SetActive(true);
 
-        //count = 0; 이 씨발련ㅋㅋㅋㅋㅋㅋ드디어 ㅈ ㅏㅂ았다
+        //count = 0; 이게 이쓰면 대사가 제대로 안나옵니다. 랭스가 안맞음 모르겠으면 직접 해봅시다 
         isDialogue = true;
     }
 
