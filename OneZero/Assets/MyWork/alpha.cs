@@ -17,10 +17,14 @@ public class alpha : MonoBehaviour
     void Update()
     {
         adidas += Time.deltaTime;
-        if(adidas>4)
+        if(adidas>6)
         {
-            alpa.alpha += 0.01f;
+            alpa.alpha -= 0.005f;
            // adidas = 0;
+        }
+        else if(adidas>1.5f)
+        {
+            alpa.alpha += 0.006f;
         }
     }
 }
