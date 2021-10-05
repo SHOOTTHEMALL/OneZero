@@ -480,7 +480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00ba734421b3fb84dbecc96d66a8b979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  alpa: {fileID: 0}
+  alpa: {fileID: 20429282}
 --- !u!1 &1846383378
 GameObject:
   m_ObjectHideFlags: 0
@@ -575,4 +575,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00ba734421b3fb84dbecc96d66a8b979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  alpa: {fileID: 0}
+  alpa: {fileID: 20429282}
