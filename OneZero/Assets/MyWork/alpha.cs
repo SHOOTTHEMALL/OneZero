@@ -19,12 +19,12 @@ public class alpha : MonoBehaviour
         adidas += Time.deltaTime;
         if(adidas>6)
         {
-            alpa.alpha -= 0.005f;
+            alpa.alpha -= 0.008f;
            // adidas = 0;
         }
         else if(adidas>1.5f)
         {
-            alpa.alpha += 0.006f;
+            alpa.alpha += 0.008f;
         }
     }
 }
