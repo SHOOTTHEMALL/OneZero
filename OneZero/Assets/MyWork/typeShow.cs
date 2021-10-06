@@ -1,12 +1,15 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class alpha : MonoBehaviour
+public class typeShow : MonoBehaviour
 {
-    public CanvasGroup alpa;
-    private float adidas = 0f;
+    public Text t1;
+    public Text t2;
+
+    private float adidas = 0;
+    private float time = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,14 +20,10 @@ public class alpha : MonoBehaviour
     void Update()
     {
         adidas += Time.deltaTime;
-        if(adidas>6)
+        time += .0016f;
+        if(adidas > 1.5f )
         {
-            alpa.alpha -= 0.008f;
-           // adidas = 0;
-        }
-        else if(adidas>1.5f)
-        {
-            alpa.alpha += 0.008f;
+            t1.color = new Color(t1.color.r, t1.color.g, t1.color.b ,time);
         }
     }
 }

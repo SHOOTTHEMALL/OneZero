@@ -225,18 +225,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!225 &20429282
-CanvasGroup:
+--- !u!114 &20429282
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 20429277}
   m_Enabled: 1
-  m_Alpha: 0
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39c0fa67271edb4192eb07f6f168637, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  t1: {fileID: 1112607174}
+  t2: {fileID: 1846383380}
 --- !u!1 &376018162
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,10 +399,9 @@ GameObject:
   - component: {fileID: 1112607173}
   - component: {fileID: 1112607175}
   - component: {fileID: 1112607174}
-  - component: {fileID: 1112607176}
   m_Layer: 5
   m_Name: startTxt
-  m_TagString: Untagged
+  m_TagString: One
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -437,7 +438,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -468,19 +469,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1112607172}
   m_CullTransparentMesh: 1
---- !u!114 &1112607176
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1112607172}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00ba734421b3fb84dbecc96d66a8b979, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  alpa: {fileID: 20429282}
 --- !u!1 &1846383378
 GameObject:
   m_ObjectHideFlags: 0
@@ -495,7 +483,7 @@ GameObject:
   - component: {fileID: 1846383382}
   m_Layer: 5
   m_Name: startTxt (1)
-  m_TagString: Untagged
+  m_TagString: Zero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -532,7 +520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -575,4 +563,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00ba734421b3fb84dbecc96d66a8b979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  alpa: {fileID: 20429282}
