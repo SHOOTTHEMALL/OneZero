@@ -34,14 +34,10 @@ public class NoMind : Slot, IBeginDragHandler, IEndDragHandler, IDragHandler
     public void OnEndDrag(PointerEventData eventData)
     {
         //throw new System.NotImplementedException();
-        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         canFuck.blocksRaycasts = true;
-        canFuck.alpha = 1f;
-        if (Naruto == false)
-        {
-            transform.position = defaultposition;
-        }
+        canFuck.alpha = 1f; //다시 들어갔다가 나올 수 있는 코드다. 
         //if (eventData.pointerDrag != null)
         //{
         //    transform.position = mousePos; 핸드폰에서 해야한다. 마우스클릭으로 한다. 
