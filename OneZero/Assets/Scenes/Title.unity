@@ -480,7 +480,6 @@ GameObject:
   - component: {fileID: 1846383379}
   - component: {fileID: 1846383381}
   - component: {fileID: 1846383380}
-  - component: {fileID: 1846383382}
   m_Layer: 5
   m_Name: startTxt (1)
   m_TagString: Zero
@@ -551,15 +550,3 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1846383378}
   m_CullTransparentMesh: 1
---- !u!114 &1846383382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1846383378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00ba734421b3fb84dbecc96d66a8b979, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

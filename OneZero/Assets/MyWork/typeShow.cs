@@ -26,7 +26,7 @@ public class typeShow : MonoBehaviour
         adidas += Time.deltaTime;
         time += .00060f;
         timeM -= .00030f;
-        time1 += .00060f;
+        time1 += .60f;
         timeM1 -= .00060f;
         if (adidas > 7 )
         {
@@ -41,15 +41,15 @@ public class typeShow : MonoBehaviour
             //time = 0;
         }
 
-        //if(adidas > 13)
-        //{
-        //    t2.color = new Color(t2.color.r, t2.color.g, t2.color.b, timeM1);
-        //    Debug.Log(timeM);
-        //}
-        //else if(adidas > 7.5f)
-        //{
-        //    t2.color = new Color(t2.color.r, t2.color.g, t2.color.b, time1);
-        //    Debug.Log(time);
-        //}
+        if (adidas > 13)
+        {
+            t2.color = new Color(t2.color.r, t2.color.g, t2.color.b, timeM1);
+            Debug.Log(timeM);
+        }
+        else if (adidas > 7.5f)
+        {
+            t2.color = new Color(t2.color.r, t2.color.g, t2.color.b, time1);
+            Debug.Log(time);
+        }
     }
 }
