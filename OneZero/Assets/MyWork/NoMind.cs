@@ -13,6 +13,8 @@ public class NoMind : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHa
     private RectTransform moveFuck;
     private CanvasGroup canFuck;
 
+    public int index;
+
     private void Awake()
     {
         moveFuck = GetComponent<RectTransform>();
