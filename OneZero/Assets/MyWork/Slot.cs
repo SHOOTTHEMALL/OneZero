@@ -6,17 +6,17 @@ using UnityEngine.UI;
 
 public class Slot : MonoBehaviour , IDropHandler
 {
-    public GameObject clothes;
+    private GameObject clothes;
     private List<Image> clothe = new List<Image>();
 
-    public GameObject srS;
+    private GameObject srS;
     private List<SpriteRenderer> sr = new List<SpriteRenderer>();
 
     public void Awake()
     {
         clothes = GameObject.Find("Meow");
-        Debug.Log(clothes);
         clothes.GetComponentsInChildren<Image>(clothe);
+        Debug.Log(clothe.Count);
 
         srS = GameObject.Find("clothes");
         srS.GetComponentsInChildren<SpriteRenderer>(sr);
