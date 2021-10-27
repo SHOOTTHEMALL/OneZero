@@ -40,7 +40,7 @@ public class typeShow : MonoBehaviour
 
         if(second>15.5f)
         {
-
+            //cg2.alpha += .01f;
         }
     }
 }
