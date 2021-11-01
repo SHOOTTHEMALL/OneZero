@@ -17,6 +17,7 @@ public class Move : MonoBehaviour
             transform.DOMoveX(-6.5f, 2);
         }
         else if (gameObject.CompareTag("Up"))
+
         {
             transform.DOMoveY(-3.3f, 2);
         }
