@@ -6,22 +6,20 @@ using UnityEngine.UI;
 
 public class Slot : MonoBehaviour , IDropHandler
 {
-    private GameObject clothes;
-    private List<Image> clothe = new List<Image>();
+    public GameObject clothes;
+    public List<Image> clothe = new List<Image>();
 
-    private GameObject srS;
-    private List<SpriteRenderer> sr = new List<SpriteRenderer>();
+    public GameObject srS;
+    public List<SpriteRenderer> sr = new List<SpriteRenderer>();
 
     public void Awake()
     {
         clothes = GameObject.Find("Meow");
         clothes.GetComponentsInChildren<Image>(clothe);
-        Debug.Log(clothe.Count);
 
         srS = GameObject.Find("clothes");
         srS.GetComponentsInChildren<SpriteRenderer>(sr);
-        //sr.RemoveAt(0);
-        Debug.Log(sr.Count);
+
         foreach (var item in sr)
         {
             item.gameObject.SetActive(false);
@@ -29,10 +27,15 @@ public class Slot : MonoBehaviour , IDropHandler
     }
     public void OnDrop(PointerEventData eventData)
     {
-
-        if(eventData.pointerDrag == clothe[0])
+        //eventData.pointerDrag.SetActive(false);
+        for (int i = 0; i < clothe.Count; i++)
         {
-            sr[0].gameObject.SetActive(true);
+            Debug.Log(sr.Count);
+            if(eventData.pointerDrag != null && eventData.pointerDrag.gameObject == clothe[i].gameObject)
+            {
+                sr[i].gameObject.SetActive(true);
+                Debug.Log("나와");
+            }
         }
         //throw new System.NotImplementedException();
         //if (eventData.pointerDrag != null)//eventData.pointerDrag != null 의 조건은 한번 들어가면 다시 초기화가 안된다. 어카지
