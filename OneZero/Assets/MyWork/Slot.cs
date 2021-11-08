@@ -30,11 +30,9 @@ public class Slot : MonoBehaviour , IDropHandler
         //eventData.pointerDrag.SetActive(false);
         for (int i = 0; i < clothe.Count; i++)
         {
-            Debug.Log(sr.Count);
             if(eventData.pointerDrag != null && eventData.pointerDrag.gameObject == clothe[i].gameObject)
             {
                 sr[i].gameObject.SetActive(true);
-                Debug.Log("나와");
             }
         }
         //throw new System.NotImplementedException();

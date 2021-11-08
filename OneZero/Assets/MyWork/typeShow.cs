@@ -8,18 +8,14 @@ public class typeShow : MonoBehaviour
 {
     public CanvasGroup cg;
     public CanvasGroup cg1;
-    public CanvasGroup cg2;
+    public ParticleSystem ps;
 
     private float second = 0f;
-    void Start()
-    {
 
-    }
-
-    // Update is called once per frame
     void Update()
     {
         second += Time.deltaTime;
+        float a = ps.shape.radius;
         if(second>7)
         {
             cg.alpha -= .006f;
@@ -37,10 +33,10 @@ public class typeShow : MonoBehaviour
         {
             cg1.alpha += .006f;
         }
-
+        
         if(second>15.5f)
         {
-            //cg2.alpha += .01f;
+            a -= .01f;
         }
     }
 }
