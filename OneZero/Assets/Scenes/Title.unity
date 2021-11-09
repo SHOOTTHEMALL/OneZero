@@ -240,7 +240,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cg: {fileID: 1112607176}
   cg1: {fileID: 1846383382}
-  ps: {fileID: 0}
+  ps: {fileID: 725806625}
 --- !u!1 &376018162
 GameObject:
   m_ObjectHideFlags: 0
@@ -610,7 +610,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: -10
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -1188,7 +1188,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 22.71
+      value: 10
       mode: 0
       spread: 0
       speed:
@@ -5291,7 +5291,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1112607173
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5621,7 +5621,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1846383379
 RectTransform:
   m_ObjectHideFlags: 0

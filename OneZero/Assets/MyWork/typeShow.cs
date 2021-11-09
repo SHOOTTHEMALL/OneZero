@@ -15,7 +15,7 @@ public class typeShow : MonoBehaviour
     void Update()
     {
         second += Time.deltaTime;
-        float a = ps.shape.radius;
+       
         if(second>7)
         {
             cg.alpha -= .006f;
@@ -36,7 +36,7 @@ public class typeShow : MonoBehaviour
         
         if(second>15.5f)
         {
-            a -= .01f;
+            ps.gameObject.SetActive(true);
         }
     }
 }
