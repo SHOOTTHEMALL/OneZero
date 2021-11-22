@@ -6,11 +6,15 @@ using UnityEngine.UI;
 
 public class Slot : MonoBehaviour , IDropHandler
 {
+
+
     public GameObject clothes;
     public List<Image> clothe = new List<Image>();
 
     public GameObject srS;
     public List<SpriteRenderer> sr = new List<SpriteRenderer>();
+
+    //public DataManager DataManager; 초기ㅗ화가된다 씬 을 옮기면 안됨
 
     public void Awake()
     {
@@ -25,6 +29,7 @@ public class Slot : MonoBehaviour , IDropHandler
             item.gameObject.SetActive(false);
         }
     }
+
     public void OnDrop(PointerEventData eventData)
     {
         //eventData.pointerDrag.SetActive(false);
@@ -33,6 +38,7 @@ public class Slot : MonoBehaviour , IDropHandler
             if(eventData.pointerDrag != null && eventData.pointerDrag.gameObject == clothe[i].gameObject)
             {
                 sr[i].gameObject.SetActive(true);
+                DataManager.instance.dataclass.hisHerat += DataManager.instance.closet.clothes[i].love;
             }
         }
         //throw new System.NotImplementedException();
@@ -45,5 +51,15 @@ public class Slot : MonoBehaviour , IDropHandler
         //{
         //    NoMind.defaultposition = transform.position;
         //}
+    }
+
+    private void getLove()
+    {
+        DataManager.instance.dataclass.hisHerat++;
+    }
+
+    private void loseLove()
+    {
+        DataManager.instance.dataclass.hisHerat--;
     }
 }
