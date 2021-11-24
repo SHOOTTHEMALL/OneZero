@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Slot : MonoBehaviour , IDropHandler
 {
-
-
     public GameObject clothes;
     public List<Image> clothe = new List<Image>();
 
     public GameObject srS;
     public List<SpriteRenderer> sr = new List<SpriteRenderer>();
+
+    private bool isPerfect;
 
     //public DataManager DataManager; 초기ㅗ화가된다 씬 을 옮기면 안됨
 
@@ -38,6 +39,7 @@ public class Slot : MonoBehaviour , IDropHandler
             if(eventData.pointerDrag != null && eventData.pointerDrag.gameObject == clothe[i].gameObject)
             {
                 sr[i].gameObject.SetActive(true);
+                eventData.pointerDrag.gameObject.SetActive(false);
                 DataManager.instance.dataclass.hisHerat += DataManager.instance.closet.clothes[i].love;
             }
         }
@@ -53,13 +55,37 @@ public class Slot : MonoBehaviour , IDropHandler
         //}
     }
 
-    private void getLove()
+    private void Update()
     {
-        DataManager.instance.dataclass.hisHerat++;
+        if(isPerfect)
+        {
+            if(DataManager.instance.dataclass.hisHerat>=50)
+            {
+                SceneManager.LoadScene(3);
+            }
+            else if (DataManager.instance.dataclass.hisHerat >= 30)
+            {
+                SceneManager.LoadScene(4);
+            }
+            else
+            {
+                SceneManager.LoadScene(5);
+            }
+        }
     }
 
-    private void loseLove()
+    public void Perfect()
     {
-        DataManager.instance.dataclass.hisHerat--;
+        isPerfect = true;
     }
+
+    //private void getLove()
+    //{
+    //    DataManager.instance.dataclass.hisHerat++;
+    //}
+
+    //private void loseLove()
+    //{
+    //    DataManager.instance.dataclass.hisHerat--;
+    //}
 }

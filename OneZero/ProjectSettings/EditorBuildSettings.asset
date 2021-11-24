@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Clothes.unity
     guid: 663f3509b383f384c9fb0cd20559d58d
+  - enabled: 1
+    path: Assets/Scenes/Satisfied.unity
+    guid: 1bc7da92897dd95479a6733a38dc9610
+  - enabled: 1
+    path: Assets/Scenes/Not bad.unity
+    guid: dd4f6a9544aa5374b9fc3a77ea788cca
+  - enabled: 1
+    path: Assets/Scenes/WTF.unity
+    guid: 6bec98c14e17929488afa9e57c69db22
   m_configObjects: {}
