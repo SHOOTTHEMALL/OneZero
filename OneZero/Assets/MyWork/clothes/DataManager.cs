@@ -25,7 +25,7 @@ public class DataManager : MonoBehaviour
     {
         string str = JsonUtility.ToJson(this);
 
-        StreamWriter sw = new StreamWriter(Application.dataPath + "/data.txt");
+        StreamWriter sw = new StreamWriter(Application.dataPath + "/Resources/data.txt");
         Debug.Log(Application.dataPath);
 
         sw.Write(str);
@@ -34,7 +34,7 @@ public class DataManager : MonoBehaviour
 
     public void Load()
     {
-        StreamReader sr = new StreamReader(Application.dataPath + "/data.txt");
+        StreamReader sr = new StreamReader(Application.dataPath + "/Resources/data.txt");
 
         string str = sr.ReadToEnd();
 
