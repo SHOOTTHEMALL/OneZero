@@ -57,8 +57,8 @@ public class LetsTalk : MonoBehaviour
             {
                 if (count < dialogue.Length)
                     NextDialogue();
-                else
-                    SceneManager.LoadScene("Etc");
+                //else
+                    //SceneManager.LoadScene("Etc");
             }
         }
     }
