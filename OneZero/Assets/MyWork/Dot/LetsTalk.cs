@@ -78,8 +78,9 @@ public class LetsTalk : MonoBehaviour
 
     private void NextDialogue()
     {
+        text_Dialogue.DOText(dialogue[count].dialogue, dialogue[count].dialogue.Length/5, false);
+        //DOTween.Clear();
         text_Dialogue.text = "";
-        text_Dialogue.DOText(dialogue[count].dialogue, 2);
         oneTalk.text = dialogue[count].nameO;
         zeroTalk.text = dialogue[count].nameZ;
         sprite_One.sprite = dialogue[count].One;
