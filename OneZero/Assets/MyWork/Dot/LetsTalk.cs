@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
 
-public class LetsTalk : MonoBehaviour
+public class LetsTalk : MonoBehaviour, TalkTip
 {
     [System.Serializable]
     public class Dialogue
@@ -48,7 +48,7 @@ public class LetsTalk : MonoBehaviour
         start += Time.deltaTime;
         if(start>5)
         {
-            ShowThem();
+            Show();
         }
 
         if(isDialogue)
@@ -63,7 +63,7 @@ public class LetsTalk : MonoBehaviour
         }
     }
 
-    private void ShowThem()
+    public void Show()
     {
         sprite_dialogue.gameObject.SetActive(true);
         sprite_One.gameObject.SetActive(true);
@@ -76,9 +76,9 @@ public class LetsTalk : MonoBehaviour
         isDialogue = true;
     }
 
-    private void NextDialogue()
+    public void NextDialogue()
     {
-        text_Dialogue.DOText(dialogue[count].dialogue, dialogue[count].dialogue.Length/5, false);
+        text_Dialogue.DOText(dialogue[count].dialogue, dialogue[count].dialogue.Length / 5, false);
         //DOTween.Clear();
         text_Dialogue.text = "";
         oneTalk.text = dialogue[count].nameO;
@@ -87,5 +87,4 @@ public class LetsTalk : MonoBehaviour
         sprite_Zero.sprite = dialogue[count].Zero;
         count++;
     }
-
 }
