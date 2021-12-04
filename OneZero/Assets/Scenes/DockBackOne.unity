@@ -157,8 +157,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -0.44, y: 0}
+  m_SizeDelta: {x: 103.44, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &89401655
 MonoBehaviour:
@@ -180,14 +180,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 2
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
   m_FillClockwise: 1
-  m_FillOrigin: 0
+  m_FillOrigin: 2
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &89401656
@@ -211,6 +211,7 @@ GameObject:
   - component: {fileID: 683295690}
   - component: {fileID: 683295689}
   - component: {fileID: 683295693}
+  - component: {fileID: 683295694}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -293,7 +294,6 @@ RectTransform:
   - {fileID: 89401654}
   - {fileID: 2029917832}
   - {fileID: 1863684000}
-  - {fileID: 1413327013}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -314,6 +314,19 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &683295694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683295688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79e62c399539aea4899b920f4f138042, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eye: {fileID: 89401655}
 --- !u!1 &781157479
 GameObject:
   m_ObjectHideFlags: 0
@@ -445,6 +458,7 @@ MonoBehaviour:
   - dialogue: stayyyy
   - dialogue: Are you have to do it
   - dialogue: "\uD55C\uAE00\uCD9C\uB825 \uB744\uC5B4\uC4F0\uAE30 \uB354 \uAE38\uAC8C"
+  - dialogue: "\uB098\uC758 \uD30C\uB3C4\uB294 \uC5B4\uB514\uC5D0 \uC788\uB098\uC694"
 --- !u!1 &1166899690
 GameObject:
   m_ObjectHideFlags: 0
@@ -536,16 +550,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1413327012}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 90}
+  m_LocalScale: {x: 0.045715902, y: 0.045715902, z: 0.045715902}
   m_Children: []
-  m_Father: {fileID: 683295692}
-  m_RootOrder: 3
+  m_Father: {fileID: 1863684000}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -13, y: 19}
+  m_AnchoredPosition: {x: -0.20810318, y: -0.8304653}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1413327014
@@ -581,7 +595,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uB208\uBB3C \uD751\uD751"
+  m_Text: '!'
 --- !u!222 &1413327015
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -667,9 +681,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1863683998}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.6562268, y: -254.61601, z: -5906.041}
-  m_LocalScale: {x: 65.62268, y: 65.62268, z: 65.62268}
-  m_Children: []
+  m_LocalPosition: {x: 1, y: -253, z: -5906.041}
+  m_LocalScale: {x: 62.997772, y: 59.06041, z: 65.62268}
+  m_Children:
+  - {fileID: 1413327013}
   m_Father: {fileID: 683295692}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

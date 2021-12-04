@@ -5,21 +5,17 @@ using UnityEngine.UI;
 
 public class FStart : MonoBehaviour
 {
-    public CanvasGroup a;
-    public float time = 0;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Image eye;
 
     // Update is called once per frame
     void Update()
     {
-        time *= Time.deltaTime;
-        if(time >5)
+        Color color = eye.color;
+        if (color.a > 0)
         {
-            a.alpha = .02f;
+            color.a -= Time.deltaTime/10;
         }
+
+        eye.color = color;
     }
 }
