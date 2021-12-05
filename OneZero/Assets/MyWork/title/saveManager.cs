@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
-
+using UnityEngine.SceneManagement;
 
 public class saveManager : MonoBehaviour
 {
@@ -11,7 +11,12 @@ public class saveManager : MonoBehaviour
 
     public Text haeunLove;
 
-    private string ori;
+    public NameClass ori = new NameClass();
+
+    private void Start()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
     string getFilePath(string fileName)
     {
         return Application.persistentDataPath + "/" + fileName;
@@ -22,26 +27,28 @@ public class saveManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            ori = haeunLove.text;
+            ori.name = haeunLove.text;
             print("Save to : " + getFilePath(saveFileName));
 
             StreamWriter sw = new StreamWriter(getFilePath(saveFileName));
-            Debug.Log(ori);
-            sw.WriteLine(ori);
+            Debug.Log(ori.name);
+            sw.WriteLine(ori.name);
             //절대 중요
             sw.Close();
-
+            Load();
+            SceneManager.LoadScene(1);
         }
+    }
 
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            print("Load to : " + getFilePath(saveFileName));
+    private void Load()
+    {
+        print("Load to : " + getFilePath(saveFileName));
 
-            StreamReader sr = new StreamReader(getFilePath(saveFileName));
+        StreamReader sr = new StreamReader(getFilePath(saveFileName));
+        ori.name = sr.ReadToEnd();
 
-            print(sr.ReadLine());
+        print(sr.ReadLine());
 
-            sr.Close();
-        }
+        sr.Close();
     }
 }

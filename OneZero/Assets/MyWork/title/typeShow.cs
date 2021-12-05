@@ -15,7 +15,7 @@ public class typeShow : MonoBehaviour
     void Update()
     {
         second += Time.deltaTime;
-        Debug.Log(second);
+        //Debug.Log(second);
         if(second>7)
         {
             cg.alpha -= .006f;

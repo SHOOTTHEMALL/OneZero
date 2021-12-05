@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public GameObject sObj;
     public bool show;
     public int sayIndex;
+    public Knife kill;
 
     public void Action(GameObject scanObj)
     {
@@ -36,9 +37,18 @@ public class GameManager : MonoBehaviour
 
         if (sayData == null)
         {
-            show = false;
-            sayIndex = 0;
-            return;
+            if(sObj.CompareTag("Zero"))
+            {
+                //대사는 스페이스바를 눌러도 더이상 변동 X여야함
+                kill.grab.gameObject.SetActive(true);
+                kill.nothx.gameObject.SetActive(true);
+            }
+            else
+            {
+                sayIndex = 0;
+                show = false;
+                return;
+            }
         }
 
         if (npc)
