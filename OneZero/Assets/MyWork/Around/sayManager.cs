@@ -21,6 +21,7 @@ public class sayManager : MonoBehaviour
         sayData.Add(1, new string[] { "응애응애" ,"와 너무 멋져요 팬이에요 꺆꺆 " });// + sav.ori.name이것이 왜 널이 뜨는것일까?
         sayData.Add(2, new string[] { "허위의 반대말은?", "사실! 깔깔깔ㅋㅋㅋ ","앞이라던가 뒤라던가" });
         sayData.Add(3, new string[] { "세우깡 마시졍" });
+        sayData.Add(4, new string[] { "주인공이다. 너무 멋지다" });
     }
 
     public string GetSay(int id, int sayIndex)

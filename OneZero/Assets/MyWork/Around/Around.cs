@@ -17,6 +17,7 @@ public class Around : MonoBehaviour
     GameObject Obj;
 
     public GameManager manager;
+    public GameObject boy;
     private void Awake()
     {
         rg = GetComponent<Rigidbody2D>();
@@ -65,5 +66,13 @@ public class Around : MonoBehaviour
         }
         else
             Obj = null;
+    }
+
+    private void OnCollisionEnter2D(Collision2D pal)
+    {
+        if(pal.gameObject.CompareTag("destiny"))
+        {
+            boy.SetActive(true);
+        }
     }
 }

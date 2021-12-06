@@ -4,13 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - One
   - Zero
-  - Up
-  - Oh
-  - iP
   - Ground
   - pI
+  - iP
+  - destiny
   layers:
   - Default
   - TransparentFX
