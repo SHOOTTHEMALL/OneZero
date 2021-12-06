@@ -16,47 +16,58 @@ public class GameManager : MonoBehaviour
     {
         sObj = scanObj;
         ObjData objData = sObj.GetComponent<ObjData>();
-        Say(objData.id, objData.npc);
+        
+        Say(objData);
+
         sayPanel.SetBool("isShow", show);
     }
 
-    void Say(int id, bool npc)
+    void Say(ObjData data)
     {
         string sayData = "";
+
         if (say.isAni)
         {
             say.setMsg("");
             return;
         }
-        else
-        {
-            sayData = sayManager.GetSay(id, sayIndex);
-        }
-
-
-
-        if (sayData == null)
+        
+        if (!sayManager.CheckExist(data.id, sayIndex))
         {
             if(sObj.CompareTag("Zero"))
             {
-                //대사는 스페이스바를 눌러도 더이상 변동 X여야함
-                kill.grab.gameObject.SetActive(true);
-                kill.nothx.gameObject.SetActive(true);
-            }
-            else
+                if (kill.youChoose)
+                {
+                    sayIndex = 0;
+                    data.id++;
+                    if(sayManager.CheckExist(data.id, sayIndex))
+                    {
+                        sayData = sayManager.GetSay(data.id, sayIndex);
+                        say.setMsg(sayData);
+                        //더 이어질 대화가 있다면
+                    }else
+                    {
+                        // 더 이어질 대화가 없다면
+                        Debug.Log("종료");
+                    }
+                    
+                }
+                else
+                {
+                    kill.grab.gameObject.SetActive(true);
+                    kill.nothx.gameObject.SetActive(true);
+                    return;
+                }
+
+            }else
             {
                 sayIndex = 0;
                 show = false;
                 return;
             }
-        }
-
-        if (npc)
+        }else
         {
-            say.setMsg(sayData.Split(':')[0]);
-        }
-        else
-        {
+            sayData = sayManager.GetSay(data.id, sayIndex);
             say.setMsg(sayData);
         }
 

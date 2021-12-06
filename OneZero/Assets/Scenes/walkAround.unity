@@ -202,6 +202,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 179212594}
   m_CullTransparentMesh: 1
+--- !u!1 &233383615
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 233383617}
+  - component: {fileID: 233383616}
+  m_Layer: 0
+  m_Name: KillingTime
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &233383616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233383615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba3c6c32fc82d5f4c91f53f264967163, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grab: {fileID: 555701114}
+  nothx: {fileID: 333769048}
+  grabing: {fileID: 1628862923}
+  youChoose: 0
+--- !u!4 &233383617
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233383615}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -24.93029, y: 10.03673, z: 1184.0891}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &261943330
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,7 +510,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 333769049}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 233383616}
+        m_TargetAssemblyTypeName: Knife, Assembly-CSharp
+        m_MethodName: Nothx
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &333769049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -584,7 +643,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 555701115}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 233383616}
+        m_TargetAssemblyTypeName: Knife, Assembly-CSharp
+        m_MethodName: getKnife
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &555701115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -672,7 +743,7 @@ MonoBehaviour:
   sObj: {fileID: 0}
   show: 0
   sayIndex: 0
-  kill: {fileID: 1588679234}
+  kill: {fileID: 233383616}
 --- !u!1 &614373575
 GameObject:
   m_ObjectHideFlags: 0
@@ -1277,7 +1348,6 @@ GameObject:
   - component: {fileID: 1588679232}
   - component: {fileID: 1588679231}
   - component: {fileID: 1588679230}
-  - component: {fileID: 1588679234}
   m_Layer: 5
   m_Name: TalkCanvas
   m_TagString: Untagged
@@ -1369,20 +1439,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1588679234
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1588679229}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba3c6c32fc82d5f4c91f53f264967163, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  grab: {fileID: 555701114}
-  nothx: {fileID: 333769048}
 --- !u!1 &1628862921
 GameObject:
   m_ObjectHideFlags: 0
@@ -1465,7 +1521,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1628862924}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 233383616}
+        m_TargetAssemblyTypeName: Knife, Assembly-CSharp
+        m_MethodName: Kill
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1628862924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1564,7 +1632,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1701717434}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -52, y: 7.86, z: -10}
+  m_LocalPosition: {x: -36.02, y: 7.86, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1350046940}
@@ -1618,7 +1686,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1774131337}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -34.83, y: 7.88, z: 0}
+  m_LocalPosition: {x: -26.84, y: 7.88, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1703,7 +1771,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1904556657}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -52, y: 7.86, z: 0}
+  m_LocalPosition: {x: -36.02, y: 7.86, z: 0}
   m_LocalScale: {x: 1.140965, y: 1.140965, z: 1.140965}
   m_Children:
   - {fileID: 2113814275}
@@ -2312,7 +2380,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 1
-  npc: 0
 --- !u!61 &8966230229470078030
 BoxCollider2D:
   m_ObjectHideFlags: 0

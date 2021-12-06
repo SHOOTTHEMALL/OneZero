@@ -39,7 +39,7 @@ public class typeEffect : MonoBehaviour
         index = 0;
 
         interval = 1.0f / charS;
-        Debug.Log(interval);
+        //Debug.Log(interval);
         isAni = true;
         Invoke("EffectIng", interval);
     }
