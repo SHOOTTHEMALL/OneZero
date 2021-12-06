@@ -10,18 +10,20 @@ public class sayManager : MonoBehaviour
     void Awake()
     {
         sayData = new Dictionary<int, string[]>();
+        sav = FindObjectOfType<saveManager>();
+        Debug.Log(sav.ori.name);
         GeData();
     }
 
     private void Start()
     {
-        sav = FindObjectOfType<saveManager>();
+
     }
 
     // Update is called once per frame
     void GeData()
     {
-        sayData.Add(1, new string[] { "응애응애" ,"와 너무 멋져요 팬이에요 꺆꺆"});// + sav.ori.name이것이 왜 널이 뜨는것일까?
+        sayData.Add(1, new string[] { "응애응애" ,"와 너무 멋져요 팬이에요 꺆꺆 " + sav.ori.name });// + sav.ori.name이것이 왜 널이 뜨는것일까?
     }
 
     public string GetSay(int id, int sayIndex)
