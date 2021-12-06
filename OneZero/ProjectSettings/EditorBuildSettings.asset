@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/walkAround.unity
     guid: 7a134f0ff7e3aea4e88dc0e1946f6415
   - enabled: 1
+    path: Assets/Scenes/School.unity
+    guid: 41272c38cc0264349a90db88e72b2c2f
+  - enabled: 1
     path: Assets/Scenes/Clothes.unity
     guid: 663f3509b383f384c9fb0cd20559d58d
   - enabled: 1

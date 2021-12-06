@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager instance;
     public sayManager sayManager;
     public Animator sayPanel;
     public typeEffect say;
@@ -11,6 +13,17 @@ public class GameManager : MonoBehaviour
     public bool show;
     public int sayIndex;
     public Knife kill;
+    public bool youChoose = false;
+    public bool isGrab = false;
+
+    private void Awake()
+    {
+        if(instance !=null)
+        {
+            Destroy(this);
+        }
+        instance = this;
+    }
 
     public void Action(GameObject scanObj)
     {
@@ -36,7 +49,7 @@ public class GameManager : MonoBehaviour
         {
             if(sObj.CompareTag("Zero"))
             {
-                if (kill.youChoose)
+                if (youChoose)
                 {
                     sayIndex = 0;
                     data.id++;
@@ -48,7 +61,8 @@ public class GameManager : MonoBehaviour
                     }else
                     {
                         // 더 이어질 대화가 없다면
-                        Debug.Log("종료");
+                        //Debug.Log("종료");
+                        SceneManager.LoadScene(2);
                     }
                     
                 }

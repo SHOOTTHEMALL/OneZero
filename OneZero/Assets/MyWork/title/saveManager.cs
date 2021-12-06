@@ -36,7 +36,7 @@ public class saveManager : MonoBehaviour
             //절대 중요
             sw.Close();
             Load();
-            SceneManager.LoadScene(1);
+            //SceneManager.LoadScene(1);
         }
     }
 

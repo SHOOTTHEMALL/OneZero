@@ -48,6 +48,11 @@ public class typeShow : MonoBehaviour
             ps.gameObject.SetActive(true);
             ps.startSpeed -= .005f;
         }
+
+        if(second>32)
+        {
+            getOut.gameObject.SetActive(false);
+        }
         getOut.color = color;
     }
 }
