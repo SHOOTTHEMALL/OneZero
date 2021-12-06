@@ -456,6 +456,7 @@ MonoBehaviour:
   kill: {fileID: 0}
   youChoose: 0
   isGrab: 0
+  grabing: {fileID: 0}
 --- !u!4 &260550792
 Transform:
   m_ObjectHideFlags: 0
@@ -740,6 +741,7 @@ GameObject:
   - component: {fileID: 1116431624}
   - component: {fileID: 1116431623}
   - component: {fileID: 1116431622}
+  - component: {fileID: 1116431626}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -874,6 +876,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1116431626
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116431620}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b04651669245a4c4ba18b0204d7ea262, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1180903906
 GameObject:
   m_ObjectHideFlags: 3

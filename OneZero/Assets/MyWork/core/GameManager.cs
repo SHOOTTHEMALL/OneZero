@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -15,6 +16,7 @@ public class GameManager : MonoBehaviour
     public Knife kill;
     public bool youChoose = false;
     public bool isGrab = false;
+    public Button grabing;
 
     private void Awake()
     {
@@ -87,5 +89,10 @@ public class GameManager : MonoBehaviour
 
         show = true;
         sayIndex++;
+    }
+    public void Kill()
+    {
+        //죽이는 씬으로 넘어가기
+        SceneManager.LoadScene(7);
     }
 }
