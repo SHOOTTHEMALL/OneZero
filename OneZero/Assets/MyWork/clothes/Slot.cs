@@ -65,6 +65,7 @@ public class Slot : MonoBehaviour , IDropHandler
             }
             else if (DataClass.hisHerat >= 30)
             {
+                Debug.Log(DataClass.hisHerat);
                 SceneManager.LoadScene(6);
             }
             else
