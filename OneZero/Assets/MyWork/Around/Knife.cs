@@ -10,7 +10,7 @@ public class Knife : MonoBehaviour
 
     private void Awake()
     {
-        //DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject);
     }
 
     private void Update()

@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Title.unity
     guid: ade7188e633b64149b7083ad9c67c684
   - enabled: 1
+    path: Assets/Scenes/DockBackOne.unity
+    guid: 91e9a00019f7b5847a9781a1d5cd2283
+  - enabled: 1
     path: Assets/Scenes/walkAround.unity
     guid: 7a134f0ff7e3aea4e88dc0e1946f6415
   - enabled: 1
@@ -26,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WTF.unity
     guid: 6bec98c14e17929488afa9e57c69db22
+  - enabled: 1
+    path: Assets/Scenes/DontGO.unity
+    guid: f16dbe73c7b637b4cb1bf93b27a16a14
   m_configObjects: {}

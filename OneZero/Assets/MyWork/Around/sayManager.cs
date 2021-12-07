@@ -22,6 +22,8 @@ public class sayManager : MonoBehaviour
         sayData.Add(2, new string[] { "허위의 반대말은?", "사실! 깔깔깔ㅋㅋㅋ ","앞이라던가 뒤라던가" });
         sayData.Add(3, new string[] { "세우깡 마시졍" });
         sayData.Add(4, new string[] { "주인공이다. 너무 멋지다" });
+        sayData.Add(5, new string[] { "눈물이 차오르내야`~~~~" });
+        sayData.Add(6, new string[] { "코코몽 코코몽! 이히ㅣㅣ잏" });
     }
 
     public string GetSay(int id, int sayIndex)

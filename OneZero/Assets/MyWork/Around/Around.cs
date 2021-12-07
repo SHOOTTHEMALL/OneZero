@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class Around : MonoBehaviour
 {
@@ -73,6 +74,7 @@ public class Around : MonoBehaviour
         if(pal.gameObject.CompareTag("destiny"))
         {
             boy.SetActive(true);
+            boy.transform.DOMoveX(5,3);
         }
     }
 }

@@ -25,11 +25,19 @@ public class GameManager : MonoBehaviour
             Destroy(this);
         }
         instance = this;
+
+
     }
 
     private void Start()
     {
         DataClass.InitData();
+        grabing = GameObject.Find("Kill").GetComponent<Button>();
+        //SceneManager.sceneLoaded += (scene, mode) => { //scnene은 지금 로딩된 씬의 정보다 mode ( 매개변수 자리 ) => { 실행할 구문; }
+        //    grabing = GameObject.Find("Kill").GetComponent<Button>();
+        //    if(isGrab)
+        //    grabing.gameObject.SetActive(isGrab);
+        //};
     }
 
     public void Action(GameObject scanObj)
@@ -70,7 +78,7 @@ public class GameManager : MonoBehaviour
                     {
                         // 더 이어질 대화가 없다면
                         //Debug.Log("종료");
-                        SceneManager.LoadScene(2);
+                        SceneManager.LoadScene(3);
                     }
                     
                 }
@@ -80,7 +88,15 @@ public class GameManager : MonoBehaviour
                     kill.nothx.gameObject.SetActive(true);
                     return;
                 }
-
+            }
+            else if (sObj.CompareTag("destiny") && !(sayManager.CheckExist(data.id, sayIndex)))
+            {
+                data.id++;
+                if (data.id == 5)
+                {
+                    Debug.Log("대화가 끝났고 씬을 이동시킬것입니다.");
+                    SceneManager.LoadScene(3);
+                }
             }
             else
             {
@@ -89,6 +105,7 @@ public class GameManager : MonoBehaviour
                 return;
             }
         }
+
         else
         {
             sayData = sayManager.GetSay(data.id, sayIndex);
