@@ -34,6 +34,6 @@ public class sayManager : MonoBehaviour
 
     public bool CheckExist(int id, int index)
     {
-        return sayData.ContainsKey(id) && sayData[id].Length > index;
+        return sayData.ContainsKey(id) && sayData[id].Length > index ;
     }
 }

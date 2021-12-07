@@ -40,7 +40,7 @@ public class Slot : MonoBehaviour , IDropHandler
             {
                 sr[i].gameObject.SetActive(true);
                 eventData.pointerDrag.gameObject.SetActive(false);
-                DataManager.instance.dataclass.hisHerat += DataManager.instance.closet.clothes[i].love;
+                DataClass.hisHerat += DataManager.instance.closet.clothes[i].love;
             }
         }
         //throw new System.NotImplementedException();
@@ -59,11 +59,11 @@ public class Slot : MonoBehaviour , IDropHandler
     {
         if(isPerfect)
         {
-            if(DataManager.instance.dataclass.hisHerat>=50)
+            if(DataClass.hisHerat>=50)
             {
                 SceneManager.LoadScene(3);
             }
-            else if (DataManager.instance.dataclass.hisHerat >= 30)
+            else if (DataClass.hisHerat >= 30)
             {
                 SceneManager.LoadScene(4);
             }

@@ -27,6 +27,11 @@ public class GameManager : MonoBehaviour
         instance = this;
     }
 
+    private void Start()
+    {
+        DataClass.InitData();
+    }
+
     public void Action(GameObject scanObj)
     {
         sObj = scanObj;
@@ -55,12 +60,13 @@ public class GameManager : MonoBehaviour
                 {
                     sayIndex = 0;
                     data.id++;
-                    if(sayManager.CheckExist(data.id, sayIndex))
+                    if(sayManager.CheckExist(data.id, sayIndex) && data.id != 3)
                     {
                         sayData = sayManager.GetSay(data.id, sayIndex);
                         say.setMsg(sayData);
                         //더 이어질 대화가 있다면
-                    }else
+                    }
+                    else
                     {
                         // 더 이어질 대화가 없다면
                         //Debug.Log("종료");
@@ -75,13 +81,15 @@ public class GameManager : MonoBehaviour
                     return;
                 }
 
-            }else
+            }
+            else
             {
                 sayIndex = 0;
                 show = false;
                 return;
             }
-        }else
+        }
+        else
         {
             sayData = sayManager.GetSay(data.id, sayIndex);
             say.setMsg(sayData);

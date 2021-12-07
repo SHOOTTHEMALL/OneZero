@@ -8,7 +8,6 @@ public class DataManager : MonoBehaviour
     public static DataManager instance;
 
     public closet closet = null;
-    public DataClass dataclass = new DataClass(); 
     private void Awake()
     {
         if(instance!=null)
