@@ -45,10 +45,11 @@ public class NoMind : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHa
 
         //canFuck.blocksRaycasts = true;
         canFuck.alpha = 1f; //다시 들어갔다가 나올 수 있는 코드다. 
-                            //if (eventData.pointerDrag != null)
-                            //{
-                            //    transform.position = mousePos; //핸드폰에서 해야한다. 마우스클릭으로 한다. 
-                            //}
+        //if (eventData.pointerDrag != null)
+        //{
+        //    //드래그 불가능하게.
+        //    canFuck.blocksRaycasts = true;
+        //}
     }
 
     void RollBack()

@@ -33,6 +33,7 @@ public class Knife : MonoBehaviour
         GameManager.instance.youChoose = true;
         grab.gameObject.SetActive(false);
         nothx.gameObject.SetActive(false);
+        GameManager.instance.isGrabb = true;
     }
 
     public void Nothx()
@@ -41,5 +42,6 @@ public class Knife : MonoBehaviour
         GameManager.instance.youChoose = true;
         grab.gameObject.SetActive(false);
         nothx.gameObject.SetActive(false);
+        GameManager.instance.isGrabb = false;
     }
 }

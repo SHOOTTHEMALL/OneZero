@@ -745,6 +745,7 @@ MonoBehaviour:
   sayIndex: 0
   kill: {fileID: 233383616}
   youChoose: 0
+  isGrabb: 0
 --- !u!1 &614373575
 GameObject:
   m_ObjectHideFlags: 0
@@ -1793,7 +1794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 7
-  manager: {fileID: 595070363}
+  manager: {fileID: 0}
   boy: {fileID: 0}
 --- !u!50 &1904556661
 Rigidbody2D:

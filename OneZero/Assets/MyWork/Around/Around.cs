@@ -24,6 +24,12 @@ public class Around : MonoBehaviour
         rg = GetComponent<Rigidbody2D>();
     }
 
+    private void Start()
+    {
+        manager = GameManager.instance;
+        manager.show = false;
+    }
+
     private void Update()
     {
         h = manager.show ? 0 : Input.GetAxisRaw("Horizontal");

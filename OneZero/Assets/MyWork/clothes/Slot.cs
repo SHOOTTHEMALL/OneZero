@@ -33,6 +33,20 @@ public class Slot : MonoBehaviour , IDropHandler
 
     public void OnDrop(PointerEventData eventData)
     {
+        //if (eventData. != null)
+        //{
+        //    return;
+        //}
+
+        for (int i = 0; i < sr.Count; i++) //들어갔는지를 검사한다.
+        {
+            if (sr[i].gameObject.activeSelf)
+            {
+                eventData.pointerDrag.gameObject.SetActive(false);
+                return;
+            }
+        }
+
         //eventData.pointerDrag.SetActive(false);
         for (int i = 0; i < clothe.Count; i++)
         {
