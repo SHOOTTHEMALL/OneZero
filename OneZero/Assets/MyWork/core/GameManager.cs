@@ -17,7 +17,6 @@ public class GameManager : MonoBehaviour
     public bool youChoose = false;
     public bool isGrabb = false;
 
-
     private void Awake()
     {
         if(instance !=null)
@@ -50,6 +49,7 @@ public class GameManager : MonoBehaviour
             sayManager = FindObjectOfType<sayManager>();
             say = FindObjectOfType<typeEffect>();
             sayPanel = FindObjectOfType<Animator>();
+            show = false;
             Debug.Log(DataClass.hisHerat);
 
             if (isGrabb)

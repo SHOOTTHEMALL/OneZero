@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DontGO.unity
     guid: f16dbe73c7b637b4cb1bf93b27a16a14
+  - enabled: 1
+    path: Assets/Scenes/DockBackTwo.unity
+    guid: 2bb5030bf21d11544bc72f48790114b2
   m_configObjects: {}

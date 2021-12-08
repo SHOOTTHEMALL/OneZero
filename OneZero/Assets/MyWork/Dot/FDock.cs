@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class FDock : MonoBehaviour, TalkTip 
 {
@@ -25,6 +26,12 @@ public class FDock : MonoBehaviour, TalkTip
         {
             if (count < dialogue.Length)
                 NextDialogue();
+            else if(SceneManager.GetActiveScene().buildIndex == 1)
+                SceneManager.LoadScene(2);
+            else if(SceneManager.GetActiveScene().buildIndex == 5 || SceneManager.GetActiveScene().buildIndex == 6 || SceneManager.GetActiveScene().buildIndex == 7)
+            {
+                SceneManager.LoadScene(10);
+            }
         }
     }
 

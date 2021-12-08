@@ -22,12 +22,8 @@ public class Around : MonoBehaviour
     private void Awake()
     {
         rg = GetComponent<Rigidbody2D>();
-    }
-
-    private void Start()
-    {
-        manager = GameManager.instance;
-        manager.show = false;
+        manager = FindObjectOfType<GameManager>();
+        boy = GameObject.Find("Man");
     }
 
     private void Update()
