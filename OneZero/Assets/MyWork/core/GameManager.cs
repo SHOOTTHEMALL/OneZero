@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
         instance = this;
 
         DontDestroyOnLoad(gameObject);
+        DataClass.InitData();
     }
 
     //private void OnEnable()
@@ -36,8 +37,6 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        DataClass.InitData();
-        Debug.Log(DataClass.hisHerat);
         kill.grabing = GameObject.Find("Kill").GetComponent<Button>();
         kill = FindObjectOfType<Knife>();
         sayManager = FindObjectOfType<sayManager>();
@@ -45,29 +44,28 @@ public class GameManager : MonoBehaviour
         sayPanel = FindObjectOfType<Animator>();
         SceneManager.sceneLoaded += (scene, mode) =>
         { //scnene은 지금 로딩된 씬의 정보다 mode ( 매개변수 자리 ) => { 실행할 구문; }
-            Debug.Log(GameObject.Find("Kill")); 
+            //Debug.Log(GameObject.Find("Kill")); 
             kill.grabing = GameObject.Find("Kill").GetComponent<Button>();
             kill = FindObjectOfType<Knife>();
             sayManager = FindObjectOfType<sayManager>();
             say = FindObjectOfType<typeEffect>();
             sayPanel = FindObjectOfType<Animator>();
-            
+            Debug.Log(DataClass.hisHerat);
 
-            Debug.Log("1");
             if (isGrabb)
             {
                 if (scene.buildIndex == 4)
                 {
                     kill.isGrab = false;
-                    Debug.Log(scene.buildIndex);
+                    //Debug.Log(scene.buildIndex);
                 }
                 else
                 {
                     kill.isGrab = isGrabb;
-                    Debug.Log(scene.buildIndex);
+                    //Debug.Log(scene.buildIndex);
                 }
             }
-            Debug.Log(kill.isGrab);
+            //Debug.Log(kill.isGrab);
         };
     }
 
