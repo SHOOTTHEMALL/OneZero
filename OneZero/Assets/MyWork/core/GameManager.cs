@@ -15,8 +15,7 @@ public class GameManager : MonoBehaviour
     public int sayIndex;
     public Knife kill;
     public bool youChoose = false;
-    public bool isGrab = false;
-    public Button grabing;
+
 
     private void Awake()
     {
@@ -25,20 +24,32 @@ public class GameManager : MonoBehaviour
             Destroy(this);
         }
         instance = this;
+
+        kill = FindObjectOfType<Knife>();
     }
+
+    //private void OnEnable()
+    //{
+    //    Debug.Log(instance.isGrab);
+    //}
 
     private void Start()
     {
         DataClass.InitData();
         Debug.Log(DataClass.hisHerat);
-        grabing = GameObject.Find("Kill").GetComponent<Button>();
+        kill.grabing = GameObject.Find("Kill").GetComponent<Button>();
         SceneManager.sceneLoaded += (scene, mode) =>
         { //scnene은 지금 로딩된 씬의 정보다 mode ( 매개변수 자리 ) => { 실행할 구문; }
-            grabing = GameObject.Find("Kill").GetComponent<Button>();
-            if (isGrab)
-                grabing.gameObject.SetActive(isGrab);
-            Debug.Log(isGrab);
+            kill.grabing = GameObject.Find("Kill").GetComponent<Button>();
+            if (kill.isGrab)
+                kill.grabing.gameObject.SetActive(kill.isGrab);
+            Debug.Log(kill.isGrab);
         };
+    }
+
+    private void Update()
+    {
+        
     }
 
     public void Action(GameObject scanObj)

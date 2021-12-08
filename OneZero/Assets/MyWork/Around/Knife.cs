@@ -7,6 +7,8 @@ public class Knife : MonoBehaviour
 {
     public Button grab;
     public Button nothx;
+    public bool isGrab;
+    public Button grabing;
 
     private void Awake()
     {
@@ -15,19 +17,19 @@ public class Knife : MonoBehaviour
 
     private void Update()
     {
-        if(GameManager.instance.isGrab == true)
+        if (isGrab == true)
         {
-            GameManager.instance.grabing.gameObject.SetActive(true);
+            grabing.gameObject.SetActive(true);
         }
         else
         {
-            GameManager.instance.grabing.gameObject.SetActive(false);
+            grabing.gameObject.SetActive(false);
         }
     }
 
     public void getKnife()
     {
-        GameManager.instance.isGrab = true;
+        isGrab = true;
         GameManager.instance.youChoose = true;
         grab.gameObject.SetActive(false);
         nothx.gameObject.SetActive(false);
@@ -35,7 +37,7 @@ public class Knife : MonoBehaviour
 
     public void Nothx()
     {
-        GameManager.instance.isGrab = false;
+        isGrab = false;
         GameManager.instance.youChoose = true;
         grab.gameObject.SetActive(false);
         nothx.gameObject.SetActive(false);

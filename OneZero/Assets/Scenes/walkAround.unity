@@ -233,6 +233,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grab: {fileID: 555701114}
   nothx: {fileID: 333769048}
+  isGrab: 0
+  grabing: {fileID: 0}
 --- !u!4 &233383617
 Transform:
   m_ObjectHideFlags: 0
@@ -743,8 +745,6 @@ MonoBehaviour:
   sayIndex: 0
   kill: {fileID: 233383616}
   youChoose: 0
-  isGrab: 0
-  grabing: {fileID: 0}
 --- !u!1 &614373575
 GameObject:
   m_ObjectHideFlags: 0

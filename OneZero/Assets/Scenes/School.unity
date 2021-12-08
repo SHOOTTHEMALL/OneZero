@@ -455,8 +455,6 @@ MonoBehaviour:
   sayIndex: 0
   kill: {fileID: 0}
   youChoose: 0
-  isGrab: 0
-  grabing: {fileID: 0}
 --- !u!4 &260550792
 Transform:
   m_ObjectHideFlags: 0
