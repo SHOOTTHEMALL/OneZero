@@ -42,14 +42,18 @@ public class GameManager : MonoBehaviour
         { //scnene은 지금 로딩된 씬의 정보다 mode ( 매개변수 자리 ) => { 실행할 구문; }
             kill.grabing = GameObject.Find("Kill").GetComponent<Button>();
             if (kill.isGrab)
-                kill.grabing.gameObject.SetActive(kill.isGrab);
+            {
+                if (scene.buildIndex == 4)
+                {
+                    kill.isGrab = false;
+                }
+                else
+                {
+                    kill.grabing.gameObject.SetActive(kill.isGrab);
+                }
+            }
             Debug.Log(kill.isGrab);
         };
-    }
-
-    private void Update()
-    {
-        
     }
 
     public void Action(GameObject scanObj)
@@ -107,7 +111,7 @@ public class GameManager : MonoBehaviour
                 if (data.id == 5)
                 {
                     Debug.Log("대화가 끝났고 씬을 이동시킬것입니다.");
-                    SceneManager.LoadScene(3);
+                    SceneManager.LoadScene(4);
                 }
             }
             else
