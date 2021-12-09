@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DockBackTwo.unity
     guid: 2bb5030bf21d11544bc72f48790114b2
+  - enabled: 1
+    path: Assets/Scenes/MeetAgain.unity
+    guid: 3bee8042d780c0248a1189642766ce1c
   m_configObjects: {}

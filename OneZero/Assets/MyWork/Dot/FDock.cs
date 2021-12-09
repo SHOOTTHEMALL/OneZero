@@ -30,16 +30,16 @@ public class FDock : MonoBehaviour, TalkTip
                 SceneManager.LoadScene(2);
             else if(SceneManager.GetActiveScene().buildIndex == 5 || SceneManager.GetActiveScene().buildIndex == 6 || SceneManager.GetActiveScene().buildIndex == 7)
             {
-                SceneManager.LoadScene(10);
+                SceneManager.LoadScene(9);
             }
         }
     }
 
     public void NextDialogue()
     {
+        text_Dialogue.text = "";
         text_Dialogue.DOText(dialogue[count].dialogue, dialogue[count].dialogue.Length / 5, false);
         //DOTween.Clear();
-        text_Dialogue.text = "";
         count++;
     }
 

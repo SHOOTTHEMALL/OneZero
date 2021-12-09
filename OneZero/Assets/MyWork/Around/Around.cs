@@ -23,7 +23,6 @@ public class Around : MonoBehaviour
     {
         rg = GetComponent<Rigidbody2D>();
         manager = FindObjectOfType<GameManager>();
-        boy = GameObject.Find("Man");
     }
 
     private void Update()

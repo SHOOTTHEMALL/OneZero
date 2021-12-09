@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour
 
             if (isGrabb)
             {
-                if (scene.buildIndex == 4)
+                if (scene.buildIndex == 4 || scene.buildIndex == 10)
                 {
                     kill.isGrab = false;
                     //Debug.Log(scene.buildIndex);
