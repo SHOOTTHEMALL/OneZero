@@ -32,6 +32,10 @@ public class FDock : MonoBehaviour, TalkTip
             {
                 SceneManager.LoadScene(9);
             }
+            else if(SceneManager.GetActiveScene().buildIndex == 9)
+            {
+                SceneManager.LoadScene(10);
+            }
         }
     }
 
