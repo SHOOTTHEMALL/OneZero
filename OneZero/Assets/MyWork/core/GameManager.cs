@@ -29,18 +29,13 @@ public class GameManager : MonoBehaviour
         DataClass.InitData();
     }
 
-    //private void OnEnable()
-    //{
-    //    Debug.Log(instance.isGrab);
-    //}
-
     private void Start()
     {
         kill.grabing = GameObject.Find("Kill").GetComponent<Button>();
         kill = FindObjectOfType<Knife>();
         sayManager = FindObjectOfType<sayManager>();
         say = FindObjectOfType<typeEffect>();
-        sayPanel = FindObjectOfType<Animator>();
+        sayPanel = GameObject.Find("WannaGet").GetComponent<Animator>();
         SceneManager.sceneLoaded += (scene, mode) =>
         { //scnene은 지금 로딩된 씬의 정보다 mode ( 매개변수 자리 ) => { 실행할 구문; }
             //Debug.Log(GameObject.Find("Kill")); 
@@ -48,8 +43,9 @@ public class GameManager : MonoBehaviour
             kill = FindObjectOfType<Knife>();
             sayManager = FindObjectOfType<sayManager>();
             say = FindObjectOfType<typeEffect>();
-            sayPanel = FindObjectOfType<Animator>();
+            sayPanel = GameObject.Find("WannaGet").GetComponent<Animator>();
             show = false;
+            sayIndex = 0;
             Debug.Log(DataClass.hisHerat);
 
             if (isGrabb)
