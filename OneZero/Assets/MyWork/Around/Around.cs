@@ -12,6 +12,8 @@ public class Around : MonoBehaviour
     float v;
 
     bool isHorizonMove;
+    bool isWalk;
+    public Animator player;
 
     Vector3 dirVec;
 
@@ -47,7 +49,12 @@ public class Around : MonoBehaviour
         else if (hDown && h == -1)
             dirVec = Vector3.left;
         else if (hDown && h == 1)
+        {
             dirVec = Vector3.right;
+            player.SetBool("isWalk", isWalk);
+            isWalk = true;
+        }
+            
 
         if (Input.GetButtonDown("Jump") && Obj != null)
             manager.Action(Obj);

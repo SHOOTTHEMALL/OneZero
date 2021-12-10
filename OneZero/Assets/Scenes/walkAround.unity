@@ -1794,7 +1794,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 7
-  manager: {fileID: 0}
+  player: {fileID: 1904556663}
+  manager: {fileID: 595070363}
   boy: {fileID: 0}
 --- !u!50 &1904556661
 Rigidbody2D:
