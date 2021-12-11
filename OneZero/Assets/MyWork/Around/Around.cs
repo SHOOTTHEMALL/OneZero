@@ -25,6 +25,7 @@ public class Around : MonoBehaviour
     {
         rg = GetComponent<Rigidbody2D>();
         manager = FindObjectOfType<GameManager>();
+        player = GetComponent<Animator>();
     }
 
     private void Update()
@@ -47,17 +48,25 @@ public class Around : MonoBehaviour
         else if (vDown && v == -1)
             dirVec = Vector3.down;
         else if (hDown && h == -1)
+        {
             dirVec = Vector3.left;
+            isWalk = true;
+        }
         else if (hDown && h == 1)
         {
             dirVec = Vector3.right;
-            player.SetBool("isWalk", isWalk);
             isWalk = true;
+        }
+        else
+        {
+            isWalk = false;
         }
             
 
         if (Input.GetButtonDown("Jump") && Obj != null)
             manager.Action(Obj);
+
+        player.SetBool("isWalk", isWalk);
     }
 
     private void FixedUpdate()
