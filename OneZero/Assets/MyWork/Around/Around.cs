@@ -59,7 +59,7 @@ public class Around : MonoBehaviour
         }
         else
         {
-            isWalk = false;
+            //isWalk = false;
         }
             
 
