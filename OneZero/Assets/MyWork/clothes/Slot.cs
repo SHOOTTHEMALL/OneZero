@@ -14,6 +14,7 @@ public class Slot : MonoBehaviour , IDropHandler
     public List<SpriteRenderer> sr = new List<SpriteRenderer>();
 
     private bool isPerfect;
+    public bool isIn = false;
 
     //public DataManager DataManager; 초기ㅗ화가된다 씬 을 옮기면 안됨
 
@@ -55,6 +56,7 @@ public class Slot : MonoBehaviour , IDropHandler
                 sr[i].gameObject.SetActive(true);
                 eventData.pointerDrag.gameObject.SetActive(false);
                 DataClass.hisHerat += DataManager.instance.closet.clothes[i].love;
+                isIn = true;
             }
         }
         //throw new System.NotImplementedException();
@@ -71,7 +73,7 @@ public class Slot : MonoBehaviour , IDropHandler
 
     private void Update()
     {
-        if(isPerfect)
+        if(isPerfect && isIn)
         {
             if(DataClass.hisHerat>=50)
             {

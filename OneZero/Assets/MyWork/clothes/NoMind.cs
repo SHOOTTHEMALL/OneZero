@@ -57,6 +57,7 @@ public class NoMind : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHa
         gameObject.SetActive(false);
         gameObject.SetActive(true);
         canFuck.alpha = 1f;
+        slot.isIn = false;
         //canFuck.blocksRaycasts = false;
     }
 
