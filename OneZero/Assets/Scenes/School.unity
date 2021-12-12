@@ -1235,6 +1235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 7
+  rayposition: {fileID: 0}
   player: {fileID: 818198629}
   manager: {fileID: 0}
   boy: {fileID: 0}
