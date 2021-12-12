@@ -8,6 +8,7 @@ public class typeShow : MonoBehaviour
 {
     public CanvasGroup cg;
     public CanvasGroup cg1;
+    public CanvasGroup cg2;
     public ParticleSystem ps;
     public ParticleSystem pss;
     public Image getOut;
@@ -52,7 +53,9 @@ public class typeShow : MonoBehaviour
         if(second>32)
         {
             getOut.gameObject.SetActive(false);
+            cg2.alpha -= .009f;
         }
+
         getOut.color = color;
     }
 }

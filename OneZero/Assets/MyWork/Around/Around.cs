@@ -8,6 +8,7 @@ public class Around : MonoBehaviour
     public float Speed;
 
     Rigidbody2D rg;
+    public Transform rayposition;
     float h;
     float v;
 
@@ -30,37 +31,38 @@ public class Around : MonoBehaviour
 
     private void Update()
     {
-        h = manager.show ? 0 : Input.GetAxisRaw("Horizontal");
+        h = Input.GetAxisRaw("Horizontal");
         //v = manager.show ? 0 : Input.GetAxisRaw("Vertical"); //횡스크롤로 
 
-        bool hDown = manager.show ? false : Input.GetButtonDown("Horizontal");
-        bool vDown = manager.show ? false : Input.GetButtonDown("Vertical");
-        bool hUp = manager.show ? false : Input.GetButtonUp("Horizontal");
-        bool vUP = manager.show ? false : Input.GetButtonUp("Vertical");
+        //bool hDown = manager.show ? false : Input.GetButtonDown("Horizontal");
+        //bool vDown = manager.show ? false : Input.GetButtonDown("Vertical");
+        //bool hUp = manager.show ? false : Input.GetButtonUp("Horizontal");
+        //bool vUP = manager.show ? false : Input.GetButtonUp("Vertical");
 
-        if (hDown || vUP)
-            isHorizonMove = true;
-        else if (vDown || hUp)
-            isHorizonMove = false;
-
-        if (vDown && v == 1)
-            dirVec = Vector3.up;
-        else if (vDown && v == -1)
-            dirVec = Vector3.down;
-        else if (hDown && h == -1)
+        if(!manager.show)
         {
-            dirVec = Vector3.left;
-            isWalk = true;
-        }
-        else if (hDown && h == 1)
-        {
-            dirVec = Vector3.right;
-            isWalk = true;
+            if(h < 0)
+            {
+                dirVec = Vector3.left;
+                isWalk = true;
+            }
+            else if(h>0)
+            {
+                dirVec = Vector3.right;
+                isWalk = true;
+            }
+            else
+            {
+                dirVec = Vector3.zero;
+                isWalk = false;
+            }
         }
         else
         {
-            //isWalk = false;
+            isWalk = false;
         }
+
+        
             
 
         if (Input.GetButtonDown("Jump") && Obj != null)
@@ -71,12 +73,12 @@ public class Around : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Vector2 move = isHorizonMove ? new Vector2(h, 0) : new Vector2(0, v);
-        rg.velocity = move * Speed;
+        //Vector2 move = isHorizonMove ? new Vector2(h, 0) : new Vector2(0, v);
+        rg.velocity = dirVec * Speed;
 
         //sibal Ray
-        Debug.DrawRay(rg.position, dirVec * 9, new Color(1, 0, 1));
-        RaycastHit2D Hit = Physics2D.Raycast(rg.position, dirVec, 9, LayerMask.GetMask("Objection"));
+        Debug.DrawRay(rayposition.position, dirVec * 9, new Color(1, 0, 1));
+        RaycastHit2D Hit = Physics2D.Raycast(rayposition.position, dirVec, 9, LayerMask.GetMask("Objection"));
 
         if (Hit.collider != null)
         {
