@@ -48,14 +48,11 @@ public class GameManager : MonoBehaviour
             sayPanel = GameObject.Find("WannaGet").GetComponent<Animator>();
             show = false;
             sayIndex = 0;
-            player.boy = GameObject.Find("Man");
-            player.rayposition = GameObject.Find("RaycastPosition").GetComponent<Transform>();
-            player = GameObject.Find("player").GetComponent<Around>();
             Debug.Log(DataClass.hisHerat);
 
             if (isGrabb)
             {
-                if (scene.buildIndex == 4 || scene.buildIndex == 10)
+                if (scene.buildIndex == 4 || scene.buildIndex == 9 || scene.buildIndex == 10)
                 {
                     kill.isGrab = false;
                     //Debug.Log(scene.buildIndex);
@@ -64,6 +61,12 @@ public class GameManager : MonoBehaviour
                 {
                     kill.isGrab = isGrabb;
                     //Debug.Log(scene.buildIndex);
+                }
+
+                if(scene.buildIndex == 10)
+                {
+                    youChoose = false;
+                    isGrabb = false;
                 }
             }
             //Debug.Log(kill.isGrab);
