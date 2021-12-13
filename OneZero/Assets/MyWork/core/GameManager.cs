@@ -115,6 +115,7 @@ public class GameManager : MonoBehaviour
                     }
                     
                 }
+
                 else
                 {
                     kill.grab.gameObject.SetActive(true);
@@ -129,6 +130,43 @@ public class GameManager : MonoBehaviour
                 {
                     Debug.Log("대화가 끝났고 씬을 이동시킬것입니다.");
                     SceneManager.LoadScene(4);
+                }
+            }
+            else if (sObj.CompareTag("Zeroo"))
+            {
+                if (youChoose)
+                {
+                    sayIndex = 0;
+                    data.id++;
+                    if (sayManager.CheckExist(data.id, sayIndex) && data.id != 7)
+                    {
+                        sayData = sayManager.GetSay(data.id, sayIndex);
+                        say.setMsg(sayData);
+                        //더 이어질 대화가 있다면
+                    }
+                    else
+                    {
+                        // 더 이어질 대화가 없다면
+                        //Debug.Log("종료");
+                        SceneManager.LoadScene(11);
+                    }
+
+                }
+
+                else
+                {
+                    kill.grab.gameObject.SetActive(true);
+                    kill.nothx.gameObject.SetActive(true);
+                    return;
+                }
+            }
+            else if (sObj.CompareTag("destiny") && !(sayManager.CheckExist(data.id, sayIndex)))
+            {
+                data.id++;
+                if (data.id == 9)
+                {
+                    Debug.Log("대화가 끝났고 씬을 이동시킬것입니다.");
+                    SceneManager.LoadScene(12);
                 }
             }
             else

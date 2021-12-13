@@ -38,4 +38,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MeetAgain.unity
     guid: 3bee8042d780c0248a1189642766ce1c
+  - enabled: 1
+    path: Assets/Scenes/schoolTwo.unity
+    guid: cbb05bdde9407f24bbcb6ed6a89a7c64
+  - enabled: 1
+    path: Assets/Scenes/second.unity
+    guid: 099b1d99de1b84644af108b321b3adf0
   m_configObjects: {}

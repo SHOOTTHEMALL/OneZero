@@ -13,6 +13,14 @@ public class Knife : MonoBehaviour
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
+        grab = GameObject.Find("Grab").GetComponent<Button>();
+        nothx = GameObject.Find("Nothx").GetComponent<Button>();
+        if(grab!= null && nothx != null)
+        {
+            grab.gameObject.SetActive(false);
+            nothx.gameObject.SetActive(false);
+        }
+
     }
 
     private void Update()
