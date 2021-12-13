@@ -19,8 +19,6 @@ public class FDock : MonoBehaviour, TalkTip
     [SerializeField] private Dialogue[] dialogue;
     private int count = 0;
 
-    private int scene = 0;
-
     // Update is called once per frame
     void Update()
     {
