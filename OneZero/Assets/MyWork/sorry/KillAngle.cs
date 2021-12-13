@@ -9,6 +9,7 @@ public class KillAngle : MonoBehaviour
     public void Knife()
     {
         hurt++;
+        Debug.Log(hurt);
         if(hurt >16)
         {
             Debug.Log("»ç¸Á");
