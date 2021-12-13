@@ -16,6 +16,8 @@ public class Slot : MonoBehaviour , IDropHandler
     private bool isPerfect;
     public bool isIn = false;
 
+    private Scene scene;
+
     //public DataManager DataManager; 초기ㅗ화가된다 씬 을 옮기면 안됨
 
     public void Awake()
@@ -30,6 +32,8 @@ public class Slot : MonoBehaviour , IDropHandler
         {
             item.gameObject.SetActive(false);
         }
+
+        scene = SceneManager.GetActiveScene();
     }
 
     public void OnDrop(PointerEventData eventData)
@@ -55,7 +59,16 @@ public class Slot : MonoBehaviour , IDropHandler
             {
                 sr[i].gameObject.SetActive(true);
                 eventData.pointerDrag.gameObject.SetActive(false);
-                DataClass.hisHerat += DataManager.instance.closet.clothes[i].love;
+                if(scene.buildIndex == 4)
+                {
+                    Debug.Log(1);
+                    GameManager.instance.hisHerat += DataManager.instance.closet.clothes[i].love;
+                }
+                else if( scene.buildIndex == 12)
+                {
+                    Debug.Log(2);
+                    GameManager.instance.hisHerat += DataManagerr.instance.closett.clothes[i].love;
+                }
                 isIn = true;
             }
         }
@@ -75,11 +88,11 @@ public class Slot : MonoBehaviour , IDropHandler
     {
         if(isPerfect && isIn)
         {
-            if(DataClass.hisHerat>=50)
+            if(GameManager.instance.hisHerat >=50)
             {
                 SceneManager.LoadScene(5);
             }
-            else if (DataClass.hisHerat >= 30)
+            else if (GameManager.instance.hisHerat >= 30)
             {
                 SceneManager.LoadScene(6);
             }

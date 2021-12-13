@@ -792,6 +792,7 @@ MonoBehaviour:
   kill: {fileID: 233383616}
   youChoose: 0
   isGrabb: 0
+  hisHerat: 0
 --- !u!1 &614373575
 GameObject:
   m_ObjectHideFlags: 0

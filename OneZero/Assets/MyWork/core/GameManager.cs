@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     public Knife kill;
     public bool youChoose = false;
     public bool isGrabb = false;
+    public int hisHerat = 0;
 
     private void Awake()
     {
@@ -27,7 +28,7 @@ public class GameManager : MonoBehaviour
         instance = this;
 
         DontDestroyOnLoad(gameObject);
-        DataClass.InitData();
+        //DataClass.InitData();
     }
 
     private void Start()
@@ -48,7 +49,7 @@ public class GameManager : MonoBehaviour
             sayPanel = GameObject.Find("WannaGet").GetComponent<Animator>();
             show = false;
             sayIndex = 0;
-            Debug.Log(DataClass.hisHerat);
+            Debug.Log(hisHerat);
 
             if (isGrabb)
             {
