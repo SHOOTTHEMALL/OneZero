@@ -10,13 +10,12 @@ public class Around : MonoBehaviour
     Rigidbody2D rg;
     public Transform rayposition;
     float h;
-    float v;
 
-    bool isHorizonMove;
     bool isWalk;
     public Animator player;
 
     Vector3 dirVec;
+    Vector3 moveVec;
 
     GameObject Obj;
 
@@ -43,27 +42,28 @@ public class Around : MonoBehaviour
         {
             if(h < 0)
             {
+                moveVec = Vector3.left;
                 dirVec = Vector3.left;
                 isWalk = true;
             }
             else if(h>0)
             {
+                moveVec = Vector3.right;
                 dirVec = Vector3.right;
                 isWalk = true;
             }
             else
             {
-                dirVec = Vector3.zero;
+                moveVec = Vector3.zero;
                 isWalk = false;
             }
         }
         else
         {
+            moveVec = Vector3.zero;
             isWalk = false;
         }
 
-        
-            
 
         if (Input.GetButtonDown("Jump") && Obj != null)
             manager.Action(Obj);
@@ -74,7 +74,7 @@ public class Around : MonoBehaviour
     private void FixedUpdate()
     {
         //Vector2 move = isHorizonMove ? new Vector2(h, 0) : new Vector2(0, v);
-        rg.velocity = dirVec * Speed;
+        rg.velocity = moveVec * Speed;
 
         //sibal Ray
         Debug.DrawRay(rayposition.position, dirVec * 9, new Color(1, 0, 1));

@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public Animator sayPanel;
     public typeEffect say;
     public GameObject sObj;
+    public Around player;
     public bool show;
     public int sayIndex;
     public Knife kill;
@@ -36,6 +37,7 @@ public class GameManager : MonoBehaviour
         sayManager = FindObjectOfType<sayManager>();
         say = FindObjectOfType<typeEffect>();
         sayPanel = GameObject.Find("WannaGet").GetComponent<Animator>();
+        player = FindObjectOfType<Around>();
         SceneManager.sceneLoaded += (scene, mode) =>
         { //scnene은 지금 로딩된 씬의 정보다 mode ( 매개변수 자리 ) => { 실행할 구문; }
             //Debug.Log(GameObject.Find("Kill")); 
@@ -46,6 +48,8 @@ public class GameManager : MonoBehaviour
             sayPanel = GameObject.Find("WannaGet").GetComponent<Animator>();
             show = false;
             sayIndex = 0;
+            player.boy = GameObject.Find("Man");
+            player.rayposition = GameObject.Find("RaycastPosition").GetComponent<Transform>();
             Debug.Log(DataClass.hisHerat);
 
             if (isGrabb)
