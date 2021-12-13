@@ -314,7 +314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da331ac3a53680646969f890229941c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_Dialogue: {fileID: 0}
+  text_Dialogue: {fileID: 285837063}
   dialogue:
   - dialogue: stayyyy
   - dialogue: Are you have to do it

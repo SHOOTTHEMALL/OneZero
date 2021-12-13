@@ -33,7 +33,7 @@ public class KillBtn : MonoBehaviour
     public void Kill()
     {
         //죽이는 씬으로 넘어가기
-        SceneManager.LoadScene(7);
+        SceneManager.LoadScene(8);
     }
 
 }
