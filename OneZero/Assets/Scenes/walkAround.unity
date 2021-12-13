@@ -168,7 +168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 7
   rayposition: {fileID: 514414940}
-  player: {fileID: 79294798}
+  player: {fileID: 0}
   manager: {fileID: 595070363}
 --- !u!50 &79294801
 Rigidbody2D:
@@ -248,8 +248,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grab: {fileID: 555701114}
   nothx: {fileID: 333769048}
-  isGrab: 0
   grabing: {fileID: 0}
+  isGrab: 0
 --- !u!4 &233383617
 Transform:
   m_ObjectHideFlags: 0
@@ -526,8 +526,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 233383616}
-        m_TargetAssemblyTypeName: Knife, Assembly-CSharp
+      - m_Target: {fileID: 2113814277}
+        m_TargetAssemblyTypeName: KillBtn, Assembly-CSharp
         m_MethodName: Nothx
         m_Mode: 1
         m_Arguments:
@@ -689,8 +689,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 233383616}
-        m_TargetAssemblyTypeName: Knife, Assembly-CSharp
+      - m_Target: {fileID: 2113814277}
+        m_TargetAssemblyTypeName: KillBtn, Assembly-CSharp
         m_MethodName: getKnife
         m_Mode: 1
         m_Arguments:
@@ -1921,7 +1921,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 7
   rayposition: {fileID: 0}
-  player: {fileID: 1904556663}
+  player: {fileID: 0}
   manager: {fileID: 595070363}
 --- !u!50 &1904556661
 Rigidbody2D:

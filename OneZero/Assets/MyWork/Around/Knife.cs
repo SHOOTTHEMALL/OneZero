@@ -1,25 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Knife : MonoBehaviour
 {
     public Button grab;
     public Button nothx;
-    public bool isGrab;
     public Button grabing;
+    public bool isGrab;
 
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
-        grab = GameObject.Find("Grab").GetComponent<Button>();
-        nothx = GameObject.Find("Nothx").GetComponent<Button>();
-        if(grab!= null && nothx != null)
+
+        SceneManager.sceneLoaded += (scene, mode) =>
         {
-            grab.gameObject.SetActive(false);
-            nothx.gameObject.SetActive(false);
-        }
+            if(scene.buildIndex == 2 || scene.buildIndex == 10)
+            {
+                grab = GameObject.Find("Grab").GetComponent<Button>();
+                nothx = GameObject.Find("Nothx").GetComponent<Button>();
+                if (grab != null && nothx != null)
+                {
+                    grab.gameObject.SetActive(false);
+                    nothx.gameObject.SetActive(false);
+                }
+            }
+            
+        };
 
     }
 
@@ -33,23 +42,5 @@ public class Knife : MonoBehaviour
         {
             grabing.gameObject.SetActive(false);
         }
-    }
-
-    public void getKnife()
-    {
-        isGrab = true;
-        GameManager.instance.youChoose = true;
-        grab.gameObject.SetActive(false);
-        nothx.gameObject.SetActive(false);
-        GameManager.instance.isGrabb = true;
-    }
-
-    public void Nothx()
-    {
-        isGrab = false;
-        GameManager.instance.youChoose = true;
-        grab.gameObject.SetActive(false);
-        nothx.gameObject.SetActive(false);
-        GameManager.instance.isGrabb = false;
     }
 }

@@ -101,7 +101,7 @@ public class GameManager : MonoBehaviour
                 {
                     sayIndex = 0;
                     data.id++;
-                    if(sayManager.CheckExist(data.id, sayIndex) && data.id != 3)
+                    if (sayManager.CheckExist(data.id, sayIndex) && data.id != 3)
                     {
                         sayData = sayManager.GetSay(data.id, sayIndex);
                         say.setMsg(sayData);
@@ -150,9 +150,7 @@ public class GameManager : MonoBehaviour
                         //Debug.Log("종료");
                         SceneManager.LoadScene(11);
                     }
-
                 }
-
                 else
                 {
                     kill.grab.gameObject.SetActive(true);
@@ -160,7 +158,7 @@ public class GameManager : MonoBehaviour
                     return;
                 }
             }
-            else if (sObj.CompareTag("destiny") && !(sayManager.CheckExist(data.id, sayIndex)))
+            else if (sObj.CompareTag("destinyy") && !(sayManager.CheckExist(data.id, sayIndex)))
             {
                 data.id++;
                 if (data.id == 9)
