@@ -44,4 +44,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/second.unity
     guid: 099b1d99de1b84644af108b321b3adf0
+  - enabled: 1
+    path: Assets/Scenes/Poor.unity
+    guid: ed206470531caa64481641b27c27b685
+  - enabled: 1
+    path: Assets/Scenes/schoolThree.unity
+    guid: f079f8fd3e34c0743b3bd88357eacf37
+  - enabled: 1
+    path: Assets/Scenes/Not bad 1.unity
+    guid: 7715dde40b49d124d901411235a83bad
+  - enabled: 1
+    path: Assets/Scenes/Satisfied 1.unity
+    guid: a583d889df8ea8c42a45ecae051b89c2
+  - enabled: 1
+    path: Assets/Scenes/WTF 1.unity
+    guid: 2ff5d33228e925b4e9c69f244d60451a
+  - enabled: 1
+    path: Assets/Scenes/DockBackThree.unity
+    guid: a4d2c7958b4c3654d86d84be05817cd5
   m_configObjects: {}

@@ -19,22 +19,38 @@ public class FDock : MonoBehaviour, TalkTip
     [SerializeField] private Dialogue[] dialogue;
     private int count = 0;
 
+    private int scene = 0;
+
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (count < dialogue.Length)
+            {
                 NextDialogue();
+            }
+                
             else if(SceneManager.GetActiveScene().buildIndex == 1)
+            {
                 SceneManager.LoadScene(2);
+            }
+                
             else if(SceneManager.GetActiveScene().buildIndex == 5 || SceneManager.GetActiveScene().buildIndex == 6 || SceneManager.GetActiveScene().buildIndex == 7)
             {
                 SceneManager.LoadScene(9);
             }
+            else if (SceneManager.GetActiveScene().buildIndex == 15 || SceneManager.GetActiveScene().buildIndex == 16 || SceneManager.GetActiveScene().buildIndex == 17)
+            {
+                SceneManager.LoadScene(18);
+            }
             else if(SceneManager.GetActiveScene().buildIndex == 9)
             {
                 SceneManager.LoadScene(10);
+            }
+            else if (SceneManager.GetActiveScene().buildIndex == 18)
+            {
+                SceneManager.LoadScene(13);
             }
         }
     }

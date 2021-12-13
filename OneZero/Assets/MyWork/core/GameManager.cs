@@ -168,6 +168,41 @@ public class GameManager : MonoBehaviour
                     SceneManager.LoadScene(12);
                 }
             }
+            else if (sObj.CompareTag("Zerooo"))
+            {
+                if (youChoose)
+                {
+                    sayIndex = 0;
+                    data.id++;
+                    if (sayManager.CheckExist(data.id, sayIndex) && data.id != 11)
+                    {
+                        sayData = sayManager.GetSay(data.id, sayIndex);
+                        say.setMsg(sayData);
+                        //더 이어질 대화가 있다면
+                    }
+                    else
+                    {
+                        // 더 이어질 대화가 없다면
+                        //Debug.Log("종료");
+                        SceneManager.LoadScene(14);
+                    }
+                }
+                else
+                {
+                    kill.grab.gameObject.SetActive(true);
+                    kill.nothx.gameObject.SetActive(true);
+                    return;
+                }
+            }
+            else if (sObj.CompareTag("destinyyy") && !(sayManager.CheckExist(data.id, sayIndex)))
+            {
+                data.id++;
+                if (data.id == 13)
+                {
+                    Debug.Log("대화가 끝났고 씬을 이동시킬것입니다.");
+                    SceneManager.LoadScene(15);
+                }
+            }
             else
             {
                 sayIndex = 0;

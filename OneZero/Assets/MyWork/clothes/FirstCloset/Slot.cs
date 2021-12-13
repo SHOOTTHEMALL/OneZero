@@ -90,15 +90,39 @@ public class Slot : MonoBehaviour , IDropHandler
         {
             if(GameManager.instance.hisHerat >=50)
             {
-                SceneManager.LoadScene(5);
+                if(scene.buildIndex == 4)
+                {
+                    SceneManager.LoadScene(5);
+                }
+                else if(scene.buildIndex ==12)
+                {
+                    SceneManager.LoadScene(16);
+                }
+                
             }
             else if (GameManager.instance.hisHerat >= 30)
             {
-                SceneManager.LoadScene(6);
+                if(scene.buildIndex == 4)
+                {
+                    SceneManager.LoadScene(6);
+                }
+                else if (scene.buildIndex == 12)
+                {
+                    SceneManager.LoadScene(15);
+                }
+
             }
             else
             {
-                SceneManager.LoadScene(7);
+                if(scene.buildIndex == 4)
+                {
+                    SceneManager.LoadScene(7);
+                }
+                else if (scene.buildIndex == 12)
+                {
+                    SceneManager.LoadScene(17);
+                }
+
             }
         }
     }

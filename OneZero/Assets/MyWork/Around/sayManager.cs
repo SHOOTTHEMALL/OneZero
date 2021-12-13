@@ -27,6 +27,10 @@ public class sayManager : MonoBehaviour
         sayData.Add(7, new string[] { "시간이 없다..ㅠㅠ" });
         sayData.Add(8, new string[] { "주인공 두번째" });
         sayData.Add(9, new string[] { "내 정신좀바..." });
+        sayData.Add(10, new string[] { "ㅋㅋㅋㅋ" });
+        sayData.Add(11, new string[] { "아잉아잉앙잉아잉 시발" });
+        sayData.Add(12, new string[] { "냥냥냥냥냥" });
+        sayData.Add(13, new string[] { "dmdksdj fkajs dfal;sj" });
     }
 
     public string GetSay(int id, int sayIndex)

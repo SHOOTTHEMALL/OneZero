@@ -17,7 +17,7 @@ public class Knife : MonoBehaviour
 
         SceneManager.sceneLoaded += (scene, mode) =>
         {
-            if(scene.buildIndex == 2 || scene.buildIndex == 10)
+            if(scene.buildIndex == 2 || scene.buildIndex == 10 || scene.buildIndex == 13)
             {
                 grab = GameObject.Find("Grab").GetComponent<Button>();
                 nothx = GameObject.Find("Nothx").GetComponent<Button>();
