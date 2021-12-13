@@ -40,17 +40,28 @@ public class FDock : MonoBehaviour, TalkTip
             {
                 SceneManager.LoadScene(9);
             }
-            else if (SceneManager.GetActiveScene().buildIndex == 15 || SceneManager.GetActiveScene().buildIndex == 16 || SceneManager.GetActiveScene().buildIndex == 17)
+            else if (SceneManager.GetActiveScene().buildIndex == 13 || SceneManager.GetActiveScene().buildIndex == 14 || SceneManager.GetActiveScene().buildIndex == 15)
             {
-                SceneManager.LoadScene(18);
+                SceneManager.LoadScene(16);
             }
             else if(SceneManager.GetActiveScene().buildIndex == 9)
             {
                 SceneManager.LoadScene(10);
             }
-            else if (SceneManager.GetActiveScene().buildIndex == 18)
+            else if (SceneManager.GetActiveScene().buildIndex == 16)
             {
-                SceneManager.LoadScene(13);
+                SceneManager.LoadScene(17);
+            }
+            else if(SceneManager.GetActiveScene().buildIndex == 17)
+            {
+                if(GameManager.instance.hisHerat>60)
+                {
+                    SceneManager.LoadScene(18);
+                }
+                else
+                {
+                    SceneManager.LoadScene(8);
+                }
             }
         }
     }
