@@ -50,6 +50,7 @@ public class GameManager : MonoBehaviour
             sayIndex = 0;
             player.boy = GameObject.Find("Man");
             player.rayposition = GameObject.Find("RaycastPosition").GetComponent<Transform>();
+            player = GameObject.Find("player").GetComponent<Around>();
             Debug.Log(DataClass.hisHerat);
 
             if (isGrabb)
