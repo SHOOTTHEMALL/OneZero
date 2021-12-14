@@ -41,9 +41,9 @@ public class Around : MonoBehaviour
         {
             if(h < 0)
             {
-                moveVec = Vector3.left;
+                //moveVec = Vector3.left;
                 dirVec = Vector3.left;
-                isWalk = true;
+                //isWalk = true;
             }
             else if(h>0)
             {
