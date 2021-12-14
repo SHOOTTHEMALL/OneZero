@@ -96,7 +96,7 @@ public class Slot : MonoBehaviour , IDropHandler
                 }
                 else if(scene.buildIndex ==12)
                 {
-                    SceneManager.LoadScene(16);
+                    SceneManager.LoadScene(14);
                 }
                 
             }
@@ -108,7 +108,7 @@ public class Slot : MonoBehaviour , IDropHandler
                 }
                 else if (scene.buildIndex == 12)
                 {
-                    SceneManager.LoadScene(15);
+                    SceneManager.LoadScene(13);
                 }
 
             }
@@ -120,7 +120,7 @@ public class Slot : MonoBehaviour , IDropHandler
                 }
                 else if (scene.buildIndex == 12)
                 {
-                    SceneManager.LoadScene(17);
+                    SceneManager.LoadScene(15);
                 }
 
             }

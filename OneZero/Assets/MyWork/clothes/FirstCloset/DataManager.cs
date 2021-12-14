@@ -8,6 +8,8 @@ public class DataManager : MonoBehaviour
     public static DataManager instance;
 
     public closet closet = null;
+
+    const string saveFileName = "data.sav";
     private void Awake()
     {
         if(instance!=null)
@@ -18,6 +20,11 @@ public class DataManager : MonoBehaviour
         instance = this;
 
         Load();
+    }
+
+    string getFilePath(string fileName)
+    {
+        return Application.persistentDataPath + "/" + fileName;
     }
 
     public void Save()
@@ -33,7 +40,7 @@ public class DataManager : MonoBehaviour
 
     public void Load()
     {
-        StreamReader sr = new StreamReader(Application.dataPath + "/Resources/data.txt");
+        StreamReader sr = new StreamReader(getFilePath(saveFileName));
 
         string str = sr.ReadToEnd();
 

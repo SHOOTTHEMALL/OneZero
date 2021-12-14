@@ -50,10 +50,12 @@ public class FDock : MonoBehaviour, TalkTip
             {
                 if (GameManager.instance.hisHerat > 60)
                 {
-                    SceneManager.LoadScene(18);
+                    Debug.Log(GameManager.instance.hisHerat);
+                    SceneManager.LoadScene(17);
                 }
                 else
                 {
+                    Debug.Log(GameManager.instance.hisHerat);
                     SceneManager.LoadScene(8);
                 }
             }

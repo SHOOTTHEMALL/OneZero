@@ -25,9 +25,10 @@ public class sayManager : MonoBehaviour
         "누르시면 죽일 수 있어요.","마음에 안드시면 걍 죽여버려요","그럼 해피엔딩을 못보시길 바라며!! 화이팅!"});
         sayData.Add(3, new string[] { "(당신을 애써 무시하고 있다)" });
         sayData.Add(4, new string[] { sav.ori.name+"!","안녕~ㅎㅎ♥","게임좋아해?"+"우리 학교 끝나고 피시방갈까??","준비해서 맞짱피시방에서 보자!ㅎㅎㅎ" });
-        sayData.Add(5, new string[] { "그 애를 죽이지 않은거에여?" +"다시 한번 기회를 드릴게요. 죽여버려요 그딴놈같은거"});
-        sayData.Add(6, new string[] { "어차피 호감도같은거 올리기 어려울테니까....","이 게임의 모티브와 만들어진 동기가","그것을 원한다고요."});
-        sayData.Add(7, new string[] { "아..안녕" });
+        sayData.Add(5, new string[] { "그 애를 죽이지 않은거에여?" ,"지금쯤이면 이미 죽여보셨을 것 같은뎅","그래도 해피엔딩은 못보실걸요?"});
+        sayData.Add(6, new string[] { "어차피 호감도같은거 올리기 어려울테니까....","음, 어떤 옷을 입는지에 따라","남주의 호감도가 올라가요.",
+        "해피엔딩은 절대 못보실 것 같은데..."});
+        sayData.Add(7, new string[] { "아..안녕"+sav.ori.name });
         sayData.Add(8, new string[] { "오늘도 같이 놀거지? 이번에는 어떤 옷을 입을지 기대하고 있을게" + sav.ori.name });
         sayData.Add(9, new string[] { "으...","닌 친구 자퇴시켜놓고 학교를 나오고 싶냐?" });
         sayData.Add(10, new string[] { "뭐야 그 뿔이랑 목","진짜 이상하다니까.." });
