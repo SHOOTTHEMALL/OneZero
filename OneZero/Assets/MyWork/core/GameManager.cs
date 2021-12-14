@@ -66,6 +66,7 @@ public class GameManager : MonoBehaviour
 
                 if(scene.buildIndex == 10)
                 {
+                    //이건ㅅ도
                     youChoose = false;
                     isGrabb = false;
                 }
@@ -135,6 +136,7 @@ public class GameManager : MonoBehaviour
             }
             else if (sObj.CompareTag("Zeroo"))
             {
+                Debug.Log(1);
                 if (youChoose)
                 {
                     sayIndex = 0;
