@@ -490,7 +490,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text_Dialogue: {fileID: 838799848}
-  dialogue: []
+  dialogue:
+  - dialogue: "\uC624\uB298 \uACBD\uD5D8\uCE58 2\uBC30\uB798."
+  - dialogue: "\uBA87 \uC2DC\uAE4C\uC9C0 \uC788\uB2E4 \uAC08\uAEBC\uC57C?"
+  - dialogue: "\uB09C 7\uC2DC\uC5D4 \uB4E4\uC5B4\uAC00\uC57C\uD574~"
+  - dialogue: "(\uB2F9\uC2E0\uC740 \uBB34\uB09C\uD55C \uC120\uD0DD\uC744 \uD558\uC600\uB2E4.)"
 --- !u!1 &838799846
 GameObject:
   m_ObjectHideFlags: 0
@@ -561,7 +565,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC6B0\uC6B0\uC6B0\uC6C5"
+  m_Text: "\uC548\uB155~~"
 --- !u!222 &838799849
 CanvasRenderer:
   m_ObjectHideFlags: 0

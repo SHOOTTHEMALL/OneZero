@@ -8,17 +8,21 @@ public class KillAngle : MonoBehaviour
     private int hurt = 0;
     public GameObject blood;
     public GameObject wo;
+    public GameObject love;
     public void Knife()
     {
-        hurt++;
-        blood.SetActive(true);
-        wo.SetActive(true);
+        hurt++; 
         Debug.Log(hurt);
         if(hurt >16)
         {
             Debug.Log("사망");
-            Application.Quit();
+            love.SetActive(true);
             //여기서 히로인 죽인 엔딩
+        }
+        if(hurt>5)
+        {
+            blood.SetActive(true);
+            wo.SetActive(true);
         }
     }
 }

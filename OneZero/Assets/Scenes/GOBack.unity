@@ -157,8 +157,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000019073, y: -261}
-  m_SizeDelta: {x: 370.2, y: 95.32}
+  m_AnchoredPosition: {x: 17, y: -264}
+  m_SizeDelta: {x: 912.2, y: 95.32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &285837063
 MonoBehaviour:
@@ -193,7 +193,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Laziness
+  m_Text: "\uB2F9\uC2E0\uC740 \uADF8 \uB4A4\uB85C \uADF8 \uC560\uC640 \uC0AC\uADC0\uACE0
+    \uC788\uB2E4."
 --- !u!222 &285837064
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -316,10 +317,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text_Dialogue: {fileID: 285837063}
   dialogue:
-  - dialogue: stayyyy
-  - dialogue: Are you have to do it
-  - dialogue: "\uD55C\uAE00\uCD9C\uB825 \uB744\uC5B4\uC4F0\uAE30 \uB354 \uAE38\uAC8C"
-  - dialogue: "\uB098\uC758 \uD30C\uB3C4\uB294 \uC5B4\uB514\uC5D0 \uC788\uB098\uC694"
+  - dialogue: "\uB2F9\uC2E0\uC774 \uC6D0\uD558\uB358 \uD574\uD53C\uC5D4\uB529\uC774\uB2E4."
+  - dialogue: "\uB3C4\uB300\uCCB4 \uC5B4\uB5BB\uAC8C \uBCF8\uAC70\uC57C?"
 --- !u!4 &732561261
 Transform:
   m_ObjectHideFlags: 0

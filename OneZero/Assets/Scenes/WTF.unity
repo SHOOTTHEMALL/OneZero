@@ -223,7 +223,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: "\uC548\uB155..?"
 --- !u!222 &568290363
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -803,7 +803,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text_Dialogue: {fileID: 568290362}
-  dialogue: []
+  dialogue:
+  - dialogue: "\uB108 \uC637\uC774 \uC65C \uADF8\uB798?"
+  - dialogue: "\uC880 \uBCF4\uAE30 \uADF8\uB807\uB2E4 \uC57C.."
+  - dialogue: "(\uB2F9\uC2E0\uC740 \uCD5C\uC545\uC758 \uC120\uD0DD\uC744 \uD558\uC600\uB2E4.)"
 --- !u!4 &1538148799
 Transform:
   m_ObjectHideFlags: 0

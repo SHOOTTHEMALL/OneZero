@@ -547,7 +547,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uB300\uC0AC\uAC00 \uC788\uB2E4."
+  m_Text: "\uB0B4\uC77C\uC740 \uC878\uC5C5\uC2DD\uC774\uB2E4."
 --- !u!222 &417275109
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -592,7 +592,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -1178, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &709484018
@@ -1049,11 +1049,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text_Dialogue: {fileID: 417275108}
   dialogue:
-  - dialogue: "\uC798 \uB3CC\uC544\uAC08\uAC78"
-  - dialogue: "\uB0B4\uC77C\uC740 \uC5F0\uC720\uB77C\uB5BC \uBA39\uC5B4\uC57C\uC9D5...\uD788\uD7A3"
-  - dialogue: "\uC2A4\uD0C0\uBC85\uC2A4\uAEBC \uBA39\uC5B4\uBCF4\uACE0\uC2F6\uC740\uB370
-      \uB108\uBB34 \uBE44\uC2F8\uB2E4."
-  - dialogue: "\uB098\uC911\uC5D0 \uC5B4\uB978\uB418\uBA74 \uC0AC\uBA39\uC5B4\uC57C\uC9C0"
+  - dialogue: "\uB2F9\uC2E0\uC740 \uB354\uC774\uC0C1 \uCC38\uC744 \uC218 \uC5C6\uC774
+      \uADF8 \uC560\uAC00 \uC88B\uB2E4."
+  - dialogue: "\uADF8 \uC560\uB9CC\uC774 \uB2F9\uC2E0\uC744 \uC774\uD574\uD558\uACE0"
+  - dialogue: "\uB2F9\uC2E0\uC744 \uC0AC\uB791\uD55C\uB2E4\uACE0 \uC0DD\uAC01\uD55C\uB2E4."
+  - dialogue: "\uADF8\uB807\uC9C0 \uC54A\uC73C\uBA74 \uD568\uAED8 \uC5B4\uC6B8\uB9AC\uB294
+      \uC774\uC720\uAC00 \uBB54\uB370?"
+  - dialogue: "\uD5C8\uB098 \uB0B4\uC77C\uC740 \uC878\uC5C5\uC2DD\uC774\uB2E4."
+  - dialogue: "\uC9C0\uAE08\uAE4C\uC9C0\uB9CC\uD07C \uADF8 \uC560\uB97C \uBCFC \uC218
+      \uC5C6\uACA0\uC9C0.."
+  - dialogue: "\uB0B4\uC77C\uC740 \uC6A9\uAE30\uB97C \uB0B4 \uC0AC\uB791\uC744 \uB9D0\uD558\uC790."
 --- !u!1 &2056401116
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,15 +2,15 @@
   "clothes": [
     {
       "index": 0,
-      "love": 30
+      "love": 20
     },
     {
       "index": 1,
-      "love": -100
+      "love": -20000
     },
     {
       "index": 2,
-      "love": 20
+      "love": 10
     },
     {
       "index": 3,
@@ -18,11 +18,11 @@
     },
     {
       "index": 4,
-      "love": -3000
+      "love": 50
     },
     {
       "index": 5,
-      "love": 2391
+      "love": 15
     }
   ]
 }
