@@ -48,11 +48,7 @@ public class FDock : MonoBehaviour, TalkTip
             }
             else if (SceneManager.GetActiveScene().buildIndex == 16)
             {
-                SceneManager.LoadScene(17);
-            }
-            else if(SceneManager.GetActiveScene().buildIndex == 17)
-            {
-                if(GameManager.instance.hisHerat>60)
+                if (GameManager.instance.hisHerat > 60)
                 {
                     SceneManager.LoadScene(18);
                 }
@@ -60,6 +56,10 @@ public class FDock : MonoBehaviour, TalkTip
                 {
                     SceneManager.LoadScene(8);
                 }
+            }
+            else if(SceneManager.GetActiveScene().buildIndex == 17)
+            {
+                Application.Quit();
             }
         }
     }
