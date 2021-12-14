@@ -71,6 +71,15 @@ public class GameManager : MonoBehaviour
                     isGrabb = false;
                 }
             }
+            if(!isGrabb)
+            {
+                if (scene.buildIndex == 10)
+                {
+                    //이건ㅅ도
+                    youChoose = false;
+                    isGrabb = false;
+                }
+            }
             //Debug.Log(kill.isGrab);
         };
     }
