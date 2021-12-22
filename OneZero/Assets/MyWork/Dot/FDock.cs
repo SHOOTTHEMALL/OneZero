@@ -48,14 +48,14 @@ public class FDock : MonoBehaviour, TalkTip
             }
             else if (SceneManager.GetActiveScene().buildIndex == 16)
             {
-                if (GameManager.instance.hisHerat > 60)
+                if (GameManager.instance.hisCurrentHeart > 60)
                 {
-                    Debug.Log(GameManager.instance.hisHerat);
+                    Debug.Log(GameManager.instance.hisCurrentHeart);
                     SceneManager.LoadScene(17);
                 }
                 else
                 {
-                    Debug.Log(GameManager.instance.hisHerat);
+                    Debug.Log(GameManager.instance.hisCurrentHeart);
                     SceneManager.LoadScene(8);
                 }
             }

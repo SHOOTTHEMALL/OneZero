@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     public bool youChoose = false;
     public bool isGrabb = false;
     public int hisHerat = 0;
+    public int hisCurrentHeart = 0;
 
     private void Awake()
     {
@@ -49,7 +50,7 @@ public class GameManager : MonoBehaviour
             sayPanel = GameObject.Find("WannaGet").GetComponent<Animator>();
             show = false;
             sayIndex = 0;
-            Debug.Log(hisHerat);
+            Debug.Log(hisCurrentHeart);
 
             if (isGrabb)
             {

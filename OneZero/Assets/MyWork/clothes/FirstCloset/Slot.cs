@@ -88,7 +88,8 @@ public class Slot : MonoBehaviour , IDropHandler
     {
         if(isPerfect && isIn)
         {
-            if(GameManager.instance.hisHerat >=50)
+            GameManager.instance.hisHerat = 0;
+            if(GameManager.instance.hisCurrentHeart >= 50)
             {
                 if(scene.buildIndex == 4)
                 {
@@ -100,7 +101,7 @@ public class Slot : MonoBehaviour , IDropHandler
                 }
                 
             }
-            else if (GameManager.instance.hisHerat >= 30)
+            else if (GameManager.instance.hisCurrentHeart >= 30)
             {
                 if(scene.buildIndex == 4)
                 {
@@ -130,6 +131,7 @@ public class Slot : MonoBehaviour , IDropHandler
     public void Perfect()
     {
         isPerfect = true;
+        GameManager.instance.hisCurrentHeart = GameManager.instance.hisHerat;
     }
 
     //private void getLove()
