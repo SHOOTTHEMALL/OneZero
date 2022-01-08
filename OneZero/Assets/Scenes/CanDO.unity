@@ -396,8 +396,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text_Dialogue: {fileID: 285837063}
   dialogue:
-  - dialogue: "\uC5B4\uB5BB\uAC8C \uD55C\uAC70\uC57C??"
-  - dialogue: "\uBCF4\uAE30 \uC815\uB9D0 \uD798\uB4E4\uC5C8\uC744\uD150\uB370....."
+  - dialogue: "\uC5B4\uCF00\uD588\uB178..."
+  - dialogue: "\uCD95\uD558\uD574;;"
 --- !u!4 &732561261
 Transform:
   m_ObjectHideFlags: 0

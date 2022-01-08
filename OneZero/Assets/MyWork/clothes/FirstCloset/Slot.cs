@@ -131,7 +131,7 @@ public class Slot : MonoBehaviour , IDropHandler
     public void Perfect()
     {
         isPerfect = true;
-        GameManager.instance.hisCurrentHeart = GameManager.instance.hisHerat;
+        GameManager.instance.hisCurrentHeart += GameManager.instance.hisHerat;
     }
 
     //private void getLove()
