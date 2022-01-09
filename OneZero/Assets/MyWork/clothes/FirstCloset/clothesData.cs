@@ -6,6 +6,6 @@ using System;
 [Serializable]
 public class clothesData
 {//json
-   public int index = 0;
+    public int index = 0;
    public int love = 0;
 }
