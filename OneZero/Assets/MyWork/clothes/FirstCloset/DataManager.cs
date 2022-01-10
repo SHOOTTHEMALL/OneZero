@@ -49,11 +49,11 @@ public class DataManager : MonoBehaviour
         JOBjClota1.Add("love", 20);
 
 
-        JArray JARRAY1 = new JArray();
-        JARRAY1.Add(JOBjClota);
-        JARRAY1.Add(JOBjClota1);
+        //JArray JARRAY1 = new JArray();
+        jdataObject.Add(JOBjClota);
+        jdataObject.Add(JOBjClota1);
 
-        jdataObject.Add(JARRAY1.ToString());
+        //jdataObject.Add("¿Ã∏ß",JARRAY1.ToString());
 
         print(jObj);
 
@@ -73,8 +73,8 @@ public class DataManager : MonoBehaviour
 
         sr.Close();
 
-        JObject jObj = JObject.Parse(str);
-        clotha.index = jObj["clothes"]["index"].Value<int>();
-        clotha.love = jObj["clothes"]["love"].Value<int>();
+        //JObject jObj = JObject.Parse(str);
+        //clotha.index = jObj["clothes"]["index"].Value<int>();
+        //clotha.love = jObj["clothes"]["love"].Value<int>();
     }
 }
