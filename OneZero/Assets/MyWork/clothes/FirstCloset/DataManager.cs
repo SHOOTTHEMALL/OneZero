@@ -9,7 +9,7 @@ public class DataManager : MonoBehaviour
     public static DataManager instance;
 
     public closet closet = null;
-    public clothesData clotha;
+    //public clothesData clotha;
 
     const string saveFileName = "data.sav";
 
@@ -46,12 +46,32 @@ public class DataManager : MonoBehaviour
 
         JObject JOBjClota1 = new JObject();
         JOBjClota1.Add("index", 1);
-        JOBjClota1.Add("love", 20);
+        JOBjClota1.Add("love", -154);
+
+        JObject JOBjClota2 = new JObject();
+        JOBjClota2.Add("index", 2);
+        JOBjClota2.Add("love", 10);
+
+        JObject JOBjClota3 = new JObject();
+        JOBjClota3.Add("index", 3);
+        JOBjClota3.Add("love", 50);
+
+        JObject JOBjClota4 = new JObject();
+        JOBjClota4.Add("index", 4);
+        JOBjClota4.Add("love", 20);
+
+        JObject JOBjClota5 = new JObject();
+        JOBjClota5.Add("index", 5);
+        JOBjClota5.Add("love", -30);
 
 
         //JArray JARRAY1 = new JArray();
         jdataObject.Add(JOBjClota);
         jdataObject.Add(JOBjClota1);
+        jdataObject.Add(JOBjClota2);
+        jdataObject.Add(JOBjClota3);
+        jdataObject.Add(JOBjClota4);
+        jdataObject.Add(JOBjClota5);
 
         //jdataObject.Add("¿Ã∏ß",JARRAY1.ToString());
 
